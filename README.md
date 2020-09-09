@@ -8,6 +8,8 @@ The core values are:
 2. Fast Feedback
 3. Repeatability
 4. Simplicity
+5. Operational Excellence
+6. Security
 
 ## Practices
 
