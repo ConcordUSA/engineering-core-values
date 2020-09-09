@@ -4,6 +4,18 @@ Test driven design enables us to build software with a simple design and enables
 
 ## Examples
 
-The following are practical examples / guidelines for various technologies and technical domains for implementing TDD.
+The [examples](examples) directory contains practical examples / guidelines for various technologies and technical domains for implementing unit testing.
 
-1. [Spring Boot](examples/springboot.md)
+Thus far:
+
+1. Java
+2. NodeJS
+
+TODO:
+
+1. Java - Spring Boot
+2. .NET Core
+3. ASP.NET Core
+4. Terraform
+
+Open a github issue with any further requests!
