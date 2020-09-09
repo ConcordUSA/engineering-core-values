@@ -17,5 +17,9 @@ TODO:
 2. .NET Core
 3. ASP.NET Core
 4. Terraform
+5. JavaScript - React
+6. JavaScript - Angular
+etc
+etc
 
 Open a github issue with any further requests!
