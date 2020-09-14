@@ -4,11 +4,11 @@ This document is used to begin to aggregate the Core Values, and the subsequent 
 
 The core values are:
 
-1. Clean Code
+1. [Clean Code](/corevalues/cleancode/cleancode.md)
 2. Fast Feedback
 3. Repeatability
 4. Simplicity
-5. Operational Excellence
+5. [Operational Excellence](/corevalues/operationallyready/operationally-ready.md)
 6. Security
 
 ## Practices
@@ -17,11 +17,11 @@ In order to realize these values there are 8 practices that we as an organizatio
 
 ### Vertical Slicing
 
-This is the idea that at the end every feature/story business value has been delivered. The opposite of this would be "horizontal slicing" i.e. creating two different user stories for the frontend and backend work required to deliver some business value.
+Business value has been delivered at the end every feature/story. This is as opposed to "horizontal slicing" i.e. creating two different user stories for the frontend and backend work required to deliver some business value.
 
 ### Simple Design
 
-The simplest design is often (almost always) the best solution to a given problem. The simplest solution is the easiest to maintain and the easiest to change (assuming you have appropriate testing of course). The assertion here is that trying to "build for the future" or "build in extensibility" ends up being more costly as we cannot predict what future requirements will be.
+The simplest design is often (almost always) the best solution to a given problem. The simplest solution is the easiest to maintain and the easiest to change (assuming you have appropriate testing of course). The assertion here is that trying to "build for the future" or "build in extensibility" ends up being more costly as we cannot predict what future requirements will be. Solve for the now, iterate on future later.
 
 ### Collective Code Ownership
 
@@ -37,7 +37,7 @@ Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple
 
 ### Test Driven Development
 
-Test driven development enables us to build software with a simple design and enables us to ruthlessly refactor. It also enables us to ship software quickly and frequently (umm Agile anyone??) as we have a bed of tests delivered with all new functionality.
+Test driven development enables us to build software with a simple design and enables us to ruthlessly refactor. It also enables us to ship software quickly and frequently (umm Agile anyone??) as we have a bed of tests delivered with all new functionality. This also allows you to refactor with confidence.
 
 ### Continuous Integration
 
@@ -46,3 +46,22 @@ Continuous Integration is a software development practice where members of a tea
 ### Automate Repeatable Tasks
 
 Humans are error prone; we are very bad at doing the same thing over and over. Machines, on the other hand, are very good at repeatable tasks! When working on a software project, we should strive to reduce any manual steps as much as possible. This will save time, reduce errors, but also add predictability to our software. "Works on my machine" is never an acceptable excuse! =)
+
+## TODO: Thoughts to consider
+### Review Processes?
+Should we discuss things to look for or methods of reviewing code / giving feedback?
+
+### Results Over Ceremony
+
+Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results. 
+
+Examples of some "ceremony smell":
+- *Is this a story or a task?*
+- *What should go into what sprint?*
+- *Is this story 6 hours or 8?*
+
+Avoid tendencies towards:
+- Over-engineering decision flows (i.e. Jira workflows)
+- Automating processes that will likely change
+- Requiring tools or methods of work that are simply personal preferences
+

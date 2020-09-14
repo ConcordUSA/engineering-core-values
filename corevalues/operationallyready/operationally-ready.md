@@ -20,6 +20,11 @@ There are two dimensions of the documentation space for production code:
 
 **Change Management** documentation will vary from customer customer site. Sometimes this documentation is genuinely useful and well considered, sometimes this documentation is less useful for the particulars of your impelementation. In either case, it is something that is typically reqiured to move your code into production. Check with your delivery manager to ensure that the level of documentation required is within the scope of Concord's engagement, but generally this documentation is a blocker to deployment and therefore required -- it is rare that you will be able to get an exemption at a large client from this procedural documentation. The best course of action is to (a) ensure the documentation is within Concord's scope, and (b) understand the intended need and target audience of the document to produce a useful artifact.
 
+Version control history (Git logs) can be an easy way to document your changes. Here's a few guidelines:
+- Change commits should be granular (limiting code changes to support a logical change).
+- Message should describe the granular change being committed.
+- History should make it easy for reviewers and newcomers to follow the rationalle of changes.
+
 **Runbook and Playbook information** documents the correct way to operate the system. How do you gracefully stop the system? Are there any order dependencies you need to consider when you are starting the software? Are there operational scripts for managing the system, and where are they located? Runbooks and Playbooks explain the proper operation of your system, and help ensure consistency in the operational environment. 
 
 1. Runbooks explain the proper way to start the system, stop the system, and perform any routine maintenance such as data backups or archival
@@ -29,7 +34,7 @@ Without this information, the system will suffer from inconsistent operating pro
 
 ## Serviceability
 
-Serviceability addresses the needs of an Operations team (or the DevOps engineers in a more modern shop) to be able to configure and understand the health and state  of the software system. This includes several key areas:
+Serviceability addresses the needs of an Operations team (or the DevOps engineers in a more modern shop) to be able to configure and understand the health and state of the software system. This includes several key areas:
 
 1. Externalized configuration information
 2. Logging and other forensics data
@@ -80,7 +85,7 @@ Key points to emphasize on that last point, alerting, are:
 1. Ensure alerts are actionable. Avoid alerting for strictly informational purposes; alerting fatigue from routine alerts will numb operations staff and cause them to miss or respond more slowly to true events.
 2. Ensure alerts are throttled. Emitting a new alert each time an error occurs can result in an overwhelming number of alerts within a short period of time during heavy loads.
 3. Ensure your alerting mechanism is at least as reliable as the system being observed. Alerting via e-mail (which may not be deemed mission-critical from an enterprise tiering perspective) is not acceptable for a core mission critical business system.
-4. Remember that your monitoring solution should be less complicated than the system you are monitoring. Monitoring and Alerting systems seem probe to over-engineering, and this complexity should be scrutinized carefully.
+4. Remember that your monitoring solution should be less complicated than the system you are monitoring. Monitoring and Alerting systems seem prone to over-engineering, and this complexity should be scrutinized carefully.
 
 ## Maintainability
 
