@@ -1,6 +1,6 @@
 # Unit Tesing Best Practices
 
-Test Driven Design is one of the ways we deliver on the Concord Engineering Core Value of Simplicity.
+Test Driven Development is one of the ways we deliver on the Concord Engineering Core Value of Simplicity.
 However, executing Test Driven Desing requires a strong foundation in various testing strategies and technologies.
 This document strives to provide an overview of the why and how of Unit Testing.
 While the how segments are heavily technology dependent, the reasons to test are language agnostic.
@@ -8,7 +8,7 @@ While the how segments are heavily technology dependent, the reasons to test are
 ## Why Write Unit Tests
 
 Unit tests allow us to make changes to a class, confident that the changes have not broken any core functionality of the class.
-When coupled with the Test Driven Design principle of Test First Development, unit tests allow us to confidently deliver code, while building a regression suite for any future changes.
+When coupled with the Test Driven Development principle of Test First Development, unit tests allow us to confidently deliver code, while building a regression suite for any future changes.
 The larger and more complex your class (or the application the class is a part of) the more beneficial unit tests are, though the cost of adding unit tests to an existing project increases with the same parameters.
 For this reason, it is always suggested to start writing unit tests now, when the cost is lowest.
 
