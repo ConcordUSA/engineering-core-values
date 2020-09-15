@@ -94,4 +94,61 @@ Another code smell relating to arguments is the idea of “flag arguments”.  T
 
 Above all, functions (and of course their containing classes) should be easy to test.  Simply put - if it’s painful to setup your unit tests for a given method under test, that is a sign that the method is doing too much and should be refactored.  This pain can include setting up mocks, test data, etc.  If our classes and methods are small and “do one thing” our unit tests should not require a large amount of setup.
 
-TODO - Example of how to refactor a class with many components into smaller components
+
+**Example:**
+
+Consider the methods included in the following class
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        printMortgage(...);
+        printPaymentSchedule(...);
+    }
+    private static void printMortgage() {}
+    private static void printPaymentSchedule() {}
+    public static double readNumber() {}
+    public static double calculateBalance() {}
+    public static double calculateMortgage() {}
+}
+```
+
+Below the class has been abstracted into classes to reflect their single responsibility.
+
+```java
+// Main
+public class Main {
+    public static void main(String[] args) {
+        var calculator = new MortgageCalculator(...);
+        var report = new MortgageReport(...);
+        report.printMortgage();
+        report.printPaymentSchedule();
+    }
+}
+
+// Console.java
+public class Console {
+  public static double readNumber() {}
+}
+
+// MortgageCalculator.java
+public class MortgageCalculator {
+  public MortgageCalculator() {}
+  public double calculateBalance() {}
+  public double calculateMortgage() {}
+}
+
+// MortageReport.java
+public class MortgageReport {
+  public MortgageReport() {}
+  public void printPaymentSchedule() {}
+  public void printMortgage() {}
+}
+```
+This process:
+- increases reusability
+- increases testability
+- increases readability
+- lowers risks for bugs
+
+Each class can be tested and extended without affecting its consumers.
