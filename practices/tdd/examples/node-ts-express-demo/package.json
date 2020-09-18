@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axois": "0.0.1-security",
+    "axios": "^0.20.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
