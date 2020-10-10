@@ -45,6 +45,7 @@ Some common tools and services in this space are:
 - [AWS Code Pipeline](https://aws.amazon.com/codepipeline/)
 - [Jenkins](https://www.jenkins.io/)
 - [CircleCI](https://circleci.com/)
+- [CodeShip](https://codeship.com/)
 
 ## Resources
 
