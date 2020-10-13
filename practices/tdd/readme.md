@@ -40,7 +40,9 @@ So what are some of the benefits that TDD provides to make this a practice worth
 
 5. ***Regression Suite*** - As bugs are found, and tests are created via the debugging process, a suite of regression tests naturally gets built up. This ensures that those pesky "regression defects" don't happen!
 
-6. ***Easier Refactoring*** - Refactoring is a key component in the process of TDD. By building your test suites, you enable 
+6. ***Easier Refactoring*** - Refactoring is a key component in the process of TDD. By building your test suites, you enable yourself and your team to refactor any given implementation, while immediately having the confidence that you haven't broken anything.
+
+7. ***Faster Velocity*** - This may seem counter-intuitive at first, since you are inherently writing more code. However, after a short amount of time, the amount of time that is saved by not having to manually test (or more importantly fix regression issues) leads to an overall increase in velocity. And the more features that are added, the greater the velocity gains will be!
 
 ## Examples
 
@@ -51,6 +53,8 @@ Thus far:
 1. Java
 2. NodeJS
    ![Example of TDD Unit Tests](examples/node-ts-express-demo/node-ts-express-tdd.gif)
+3. NodeJS + TS Express
+4. Dot Net Core
 
 TODO:
 

@@ -30,8 +30,10 @@ If you find yourself writing unit tests for any of the following, it may be a go
 
 ## Cool, So How do I Unit Test My Application
 
-* [Java Example](./JavaUnitTestingExample.md)
-* [Node.js Example](./NodeJsUnitTestingExample.md)
+* [Java Example](./java-unit-test-demo/JavaUnitTestingExample.md)
+* [Node.js Example](./node-unit-test-demo/NodeJsUnitTestingExample.md)
+* [Node.js TS & Express Example](./node-ts-express-demo)
+* [Dot Net Core Example](./net-core-unit-test-demo/README.md)
 
 A good first step in unit testing an application is familiarizing yourself with a framework to unit test the language your application is written in. Eg. in Java, JUnit is ubiquitous and supplements like AssertJ, Mockito, and Hamcrest are very common especially in conjuction with SpringBoot.
 
