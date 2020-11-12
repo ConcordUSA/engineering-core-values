@@ -99,7 +99,7 @@ That doesn't mean it's never a good idea to use multiple assertions, though. For
 
 ```java
 @Test
-public void dummyTest(){
+public void dummyTest{
 
 //arrange
 
@@ -114,7 +114,7 @@ assertThat(actual).isEqualTo(expected);
 
 **Use mocks when appropriate.** In testing, mocking replicates the behavior of a service, object, or process. This can be useful when the System Under Test (SUT) has dependencies on external resources such as databases. Mocking those external dependencies makes it so that you're just testing the SUT and not the external dependencies. This means that if the test fails, you can know that it's happening inside the SUT and not elsewhere. Mocking external resources can also speed up tests because it eliminates the latency in communication with those resources. There are many mocking libraries for a variety of languages and frameworks. You can see how these are implemented in the examples below.
 
-**Avoid using too many mocks.** Using a lot of mocks can result in a test being tightly coupled with the implementation of the code that it's testing. This is generally a bad thing because it makes refactoring difficult, and being able to easily refactor code is a key benefit we should be striving for with TDD.
+**Avoid coupling tests to implementation details.** A key part of TDD is that your tests shouldn't break when you refactor because you are testing _behaviors_ and not implementation details. If you refactor your code and find that tests start breaking even though the behaviors haven't changed, this is a sign that your tests are coupled to the implementation details. The use of mocks can cause this if you're not careful.
 
 **Tests should run fast.** Fast feedback is critical to TDD being successful. The flow of TDD is broken if you have to wait a few seconds every time you try to run a test. If a test is running slow, make sure it's not doing too much. And, as mentioned above, mocking can also help speed up tests.
 
