@@ -56,21 +56,67 @@ TDD starts with writing a test for a feature that you want to add to your code. 
 
 **Name test classes similarly to the classes they're testing.** An easy way to do this is to use the same name as the implementation class with "Test" at the end. So if you have a "Calculator" class, the test class would be called "CalculatorTest".
 
-**Use descriptive names for test methods.** It's helpful to name test methods based on the condition being tested and the expected result. This makes it easier to understand exactly what the test is doing. For example, if you have a method named "Add" that is expected to increment a variable named "Value" when it is called, the test method for "Add" might be named "WhenAddThenValueIsIncremented".
+**Use descriptive names for test methods.** There are different unit test naming conventions that you can use to make it easier to understand what your tests are doing. Here are some popular naming conventions with examples:
+
+1. test{Feature being tested}
+	- testFailToWithdrawMoneyIfAccountIsInvalid
+	- testApplicationIsNotAcceptedIfMandatoryFieldsAreMissing
+
+2. When_StateUnderTest_Expect_ExpectedBehavior
+	- When_InvalidAccount_Expect_WithdrawMoneyToFail
+	- When_MandatoryFieldsAreMissing_Expect_ApplicationAcceptToFail
+
+3. Given_Preconditions_When_StateUnderTest_Then_ExpectedBehavior
+	- Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMoney_Then_TransactionsWillFail
+	- Given_MandatoryFieldsAreMissing_When_ApplicationIsSubmitted_Then_ApplicationIsNotAccepted
 
 #### ***How should the tests be written?***
 
-**Arrange, Act, Assert.** Use this pattern as the structure for your test. In the "Arrange" step you set up the testing objects and prepare the prerequisites for your test. The "Act" step is where the actual work of the test is performed. And finally, the "Assert" step is where the result of the test is verified. This structure can be seen in all of the examples we've written below.
+**Arrange, Act, Assert.** Use this pattern as the structure for your test. 
+
+```
+@Test
+public void dummyTest(){
+
+//arrange
+This is where you set up the testing objects and prepare the prerequisites for your test.
+
+///act
+This is where the actual work of the test is performed.
+
+//assert
+This is where the result of the test is verified.
+
+}
+```
+This structure can be seen in all the examples below.
 
 **Write assertions first.** This makes the purpose of the test clear from the beginning.
 
-**Minimize assertions in each test method.** Testing several assertions at once can make it difficult to determine which one is causing the test to fail in the future. This doesn't mean that tests need to be limited to one assertion, though. If there are other assertions that test the same logical condition it can make sense to use them in the same test.
+**Minimize assertions in each test method.** When writing a test it's a good idea to ask yourself "If this test fails, is it obvious _why_ it failed?". When there are multiple assertions, it might not be clear which one is causing your test to fail. So in most cases, it's best to use just one assertion. 
 
-**Use mocks when appropriate.** In testing, mocking replicates the behavior of a service, object, or process. This can be useful when a method that is being tested has dependencies on external resources such as databases. Mocking those external dependencies makes it so that you're just testing the code in the method and not in the external dependencies. This means that if the test fails, you can know that it's happening inside your method and not elsewhere. Mocking external resources can also speed up tests because it eliminates the latency in communication with those resources.
+That doesn't mean it's never a good idea to use multiple assertions, though. For example, imagine a test where you want to check that a value is equal to an expected value. You can use an assertion to check this, but there are multiple ways this assertion could fail: the value could be incorrect, or the value could not exist altogether and be null. So before asserting the value is correct, you can use another assertion to check whether the value is null. That way, if the value is null, the test immediately fails. If the value is not null, then when the second assertion fails you can know with confidence that it failed because the value was incorrect. An example of how you would code this in java is below.
 
-Using too many mocks can be a problem too, however. Using a lot of mocks can result in a test being tightly coupled with the implementation of the code that it's testing. This goes against a key part of TDD - that you want to be testing behaviors of your code and not it's implementation. Coupling to the implementation makes tests more susceptible to failure when refactoring occurs.
+```java
+@Test
+public void dummyTest(){
 
-There are several frameworks such as Mockito and Moq that aid with mocking. You can see how these are implemented in the examples below.
+//arrange
+
+//act
+
+//assert
+assertNotNull(actual);
+assertThat(actual).isEqualTo(expected);
+
+}
+```
+
+**Use mocks when appropriate.** In testing, mocking replicates the behavior of a service, object, or process. This can be useful when the System Under Test (SUT) has dependencies on external resources such as databases. Mocking those external dependencies makes it so that you're just testing the SUT and not the external dependencies. This means that if the test fails, you can know that it's happening inside the SUT and not elsewhere. Mocking external resources can also speed up tests because it eliminates the latency in communication with those resources. There are many mocking libraries for a variety of languages and frameworks. You can see how these are implemented in the examples below.
+
+**Avoid using too many mocks.** Using a lot of mocks can result in a test being tightly coupled with the implementation of the code that it's testing. This is generally a bad thing because it makes refactoring difficult, and being able to easily refactor code is a key benefit we should be striving for with TDD.
+
+**Tests should run fast.** Fast feedback is critical to TDD being successful. The flow of TDD is broken if you have to wait a few seconds every time you try to run a test. If a test is running slow, make sure it's not doing too much. And, as mentioned above, mocking can also help speed up tests.
 
 **Do not introduce dependencies between tests.** Every test should be independent, and they should not have to be performed in a specific order. When tests are dependent on each other, adding new tests can easily break the existing tests.
 
