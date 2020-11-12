@@ -116,7 +116,7 @@ assertThat(actual).isEqualTo(expected);
 
 **Avoid coupling tests to implementation details.** A key part of TDD is that your tests shouldn't break when you refactor because you are testing _behaviors_ and not implementation details. If you refactor your code and find that tests start breaking even though the behaviors haven't changed, this is a sign that your tests are coupled to the implementation details. The use of mocks can cause this if you're not careful.
 
-**Tests should run fast.** Fast feedback is critical to TDD being successful. The flow of TDD is broken if you have to wait a few seconds every time you try to run a test. If a test is running slow, make sure it's not doing too much. And, as mentioned above, mocking can also help speed up tests.
+**Tests should run fast.** Fast feedback is critical to TDD being successful. The flow of TDD is broken if you have to wait a few seconds every time you try to run a test. If a test is running slow, make sure it's not doing too much. And, as mentioned above, mocking can also help speed up tests if the SUT has external dependencies.
 
 **Do not introduce dependencies between tests.** Every test should be independent, and they should not have to be performed in a specific order. When tests are dependent on each other, adding new tests can easily break the existing tests.
 
