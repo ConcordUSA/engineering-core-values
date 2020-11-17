@@ -17,7 +17,7 @@ func TestTerraformAwsExample(t *testing.T) {
 
 	// Make a copy of the terraform module to a temporary directory. This allows running multiple tests in parallel
 	// against the same terraform module.
-	exampleFolder := test_structure.CopyTerraformFolderToTemp(t, "../", "practices/tdd/examples/terraform-demo/terratest/terraform-module")
+	exampleFolder := test_structure.CopyTerraformFolderToTemp(t, "../", "terraform-module")
 
 	// Give this EC2 Instance a unique ID for a name tag so we can distinguish it from any other EC2 Instance running
 	// in your AWS account

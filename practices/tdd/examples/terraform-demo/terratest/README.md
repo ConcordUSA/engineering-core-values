@@ -22,6 +22,6 @@ A test for this module written with Terratest is under terraform-demo/terratest/
 1. Configure your AWS credentials. If you have the AWS CLI installed, you can set these with the `aws configure` command in your terminal.
 1. Install Terraform and make sure it's on your `PATH`.
 1. Install Golang and make sure this code is checked out into your `GOPATH`.
-1. `cd test`
-1. `dep ensure`
-1. `go test -v -run TestTerraformAwsExample`
+1. Navigate to the test folder (/terraform-demo/terratest/test) in the terminal.
+1. Run `go init github.com/ConcordUSA/engineering-core-values`
+1. Run `go test`
