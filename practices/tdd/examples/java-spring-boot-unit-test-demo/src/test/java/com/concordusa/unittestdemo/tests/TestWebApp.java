@@ -6,7 +6,7 @@ import com.concordusa.unittestdemo.controllers.StudentController;
 import com.concordusa.unittestdemo.model.Student;
 import com.concordusa.unittestdemo.model.Students;
 import com.concordusa.unittestdemo.service.StudentService;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -16,6 +16,7 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -29,9 +30,8 @@ public class TestWebApp {
     @Mock
     StudentService studentService;
 
-    @Before
-    public void setUp() throws Exception {
-
+    @BeforeEach
+    public void setup() {
         MockitoAnnotations.initMocks(this);
     }
 
@@ -45,6 +45,7 @@ public class TestWebApp {
         Student student = new Student();
         student.setStudentId("1");
 
+        //doReturn(true).when(studentService.save(any(Student.class)));
         when(studentService.save(any(Student.class))).thenReturn(true);
 
         Student studentToAdd = new Student("1", "Goldy", "Computer Science", 2024);
@@ -66,6 +67,7 @@ public class TestWebApp {
         Students students = new Students();
         students.setStudentList(Arrays.asList(student1, student2));
 
+        //doReturn(students).when(studentService.findAll());
         when(studentService.findAll()).thenReturn(students);
 
         // act
