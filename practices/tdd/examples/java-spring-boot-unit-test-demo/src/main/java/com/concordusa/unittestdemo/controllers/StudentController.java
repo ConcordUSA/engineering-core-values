@@ -22,7 +22,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping(path="/employees", produces = "application/json")
+    @GetMapping(path="/students", produces = "application/json")
     public Students getStudents()
     {
         Students response = new Students();
