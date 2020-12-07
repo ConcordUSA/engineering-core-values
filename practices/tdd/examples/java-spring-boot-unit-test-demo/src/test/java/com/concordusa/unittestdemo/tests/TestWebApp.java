@@ -1,6 +1,8 @@
 package com.concordusa.unittestdemo.tests;
 
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.concordusa.unittestdemo.controllers.StudentController;
 import com.concordusa.unittestdemo.model.Student;
@@ -16,7 +18,7 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import static org.mockito.Mockito.doReturn;
+
 import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -45,8 +47,7 @@ public class TestWebApp {
         Student student = new Student();
         student.setStudentId("1");
 
-        //doReturn(true).when(studentService.save(any(Student.class)));
-        when(studentService.save(any(Student.class))).thenReturn(true);
+        when(studentService.save(any(Student.class))).thenReturn(student);
 
         Student studentToAdd = new Student("1", "Goldy", "Computer Science", 2024);
 
@@ -64,11 +65,10 @@ public class TestWebApp {
         // arrange
         Student student1 = new Student("1", "Goldy", "Computer Science", 2024);
         Student student2 = new Student("2", "Bob", "History", 2022);
-        Students students = new Students();
-        students.setStudentList(Arrays.asList(student1, student2));
+        List<Student> list = new ArrayList<Student>();
+        list.addAll(Arrays.asList(student1, student2));
 
-        //doReturn(students).when(studentService.findAll());
-        when(studentService.findAll()).thenReturn(students);
+        when(studentService.findAll()).thenReturn(list);
 
         // act
         Students result = studentController.getStudents();
