@@ -5,7 +5,7 @@ This document is used to begin to aggregate the Core Values, and the subsequent 
 The core values are:
 
 1. [Clean Code](/corevalues/cleancode/cleancode.md)
-2. Fast Feedback
+2. [Fast Feedback](/corevalues/fastfeedback/fastfeedback.md)
 3. Repeatability
 4. Simplicity
 5. [Operational Excellence](/corevalues/operationallyready/operationally-ready.md)
