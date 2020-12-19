@@ -1,7 +1,5 @@
 package com.example.mobprogramming.solution;
 
-import com.example.mobprogramming.problem.Engine;
-
 public class TransportationObject {
     String name;
     double speed;

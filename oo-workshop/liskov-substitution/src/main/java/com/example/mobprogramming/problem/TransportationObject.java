@@ -1,17 +1,9 @@
 package com.example.mobprogramming.problem;
 
 public class TransportationObject {
-    String name;
     double speed;
     Engine engine;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    boolean batteryCharged;
 
     public double getSpeed() {
         return speed;
@@ -29,5 +21,22 @@ public class TransportationObject {
         this.engine = engine;
     }
 
-    void startEngine() { }
+    public boolean isBatteryCharged() {
+        return batteryCharged;
+    }
+
+    public void setBatteryCharged(boolean batteryCharged) {
+        this.batteryCharged = batteryCharged;
+    }
+
+    public String startEngine(boolean batteryCharged) {
+        String message;
+        if(batteryCharged == true){
+            message = "Starting engine...";
+        }
+        else{
+            message = "Can't start engine. Charge battery.";
+        }
+        return message;
+    }
 }
