@@ -7,7 +7,7 @@ public class Move {
     Bicycle bicycle = new Bicycle();
     Skateboard skateboard = new Skateboard();
 
-    public void startMoving(){
+    public void startMoving(boolean batteryCharged){
         car.startEngine(batteryCharged);
         bus.startEngine(batteryCharged);
         bicycle.startEngine(batteryCharged); // there's no engine to start!

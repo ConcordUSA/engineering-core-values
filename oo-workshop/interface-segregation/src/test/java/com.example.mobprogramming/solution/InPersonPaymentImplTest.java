@@ -7,10 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class InPersonPaymentImplTest {
     @Test
     void payInPerson(String price){
+        //arrange
         InPersonPaymentImpl given = new InPersonPaymentImpl("9.99");
+
+        //act
         String when = given.payInPerson();
 
-        //then
+        //assert
         assertTrue(when.contains("9.99"));
     }
 }

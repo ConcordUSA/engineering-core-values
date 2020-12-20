@@ -3,9 +3,9 @@ package com.example.mobprogramming.problem;
 public class OnlineClientImpl implements RestaurantInterface {
     public String name;
     public String food;
-    public int price;
+    public String price;
 
-    public OnlineClientImpl(String name, String food, int price){
+    public OnlineClientImpl(String name, String food, String price){
         this.name = name;
         this.food = food;
         this.price = price;
