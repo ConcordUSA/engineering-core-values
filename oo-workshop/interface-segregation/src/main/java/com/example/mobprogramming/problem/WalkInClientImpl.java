@@ -1,27 +1,34 @@
 package com.example.mobprogramming.problem;
 
 public class WalkInClientImpl implements RestaurantInterface{
+    public String name;
+    public String food;
+    public String price;
+
+    public WalkInClientImpl(String name, String food, String price){
+        this.name = name;
+        this.food = food;
+        this.price = price;
+    }
+
     @Override
-    public void acceptOnlineOrder() {
+    public String acceptOnlineOrder() {
         //not applicable for walk-in client
         throw new UnsupportedOperationException();
     }
     @Override
-    public void takeTelephoneOrder() {
+    public String payOnline() {
         //not applicable for walk-in client
         throw new UnsupportedOperationException();
     }
     @Override
-    public void payOnline() {
-        //not applicable for walk-in client
-        throw new UnsupportedOperationException();
+    public String walkInCustomerOrder() {
+        String message = "Walk-in order from " + this.name + " for " + this.food;
+        return message;
     }
     @Override
-    public void walkInCustomerOrder() {
-        //logic for placing walk-in customer order
-    }
-    @Override
-    public void payInPerson() {
-        //logic for paying in person
+    public String payInPerson() {
+        String message = "In-person payment for $" + this.price + " processed";
+        return message;
     }
 }

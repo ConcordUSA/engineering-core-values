@@ -1,26 +1,36 @@
 package com.example.mobprogramming.problem;
 
 public class OnlineClientImpl implements RestaurantInterface {
-    @Override
-    public void acceptOnlineOrder() {
-        //logic for placing online order
+    public String name;
+    public String food;
+    public String price;
+
+    public OnlineClientImpl(String name, String food, String price){
+        this.name = name;
+        this.food = food;
+        this.price = price;
     }
+
     @Override
-    public void takeTelephoneOrder() {
+    public String acceptOnlineOrder() {
+        String message = "Online order from " + this.name + " for " + this.food;
+        return message;
+    }
+
+    @Override
+    public String payOnline() {
+        String message = "Online payment for $" + this.price + " processed";
+        return message;
+    }
+
+    @Override
+    public String walkInCustomerOrder() {
         //not applicable for online order
         throw new UnsupportedOperationException();
     }
+
     @Override
-    public void payOnline() {
-        //logic for paying online
-    }
-    @Override
-    public void walkInCustomerOrder() {
-        //not applicable for online order
-        throw new UnsupportedOperationException();
-    }
-    @Override
-    public void payInPerson() {
+    public String payInPerson() {
         //not applicable for online order
         throw new UnsupportedOperationException();
     }
