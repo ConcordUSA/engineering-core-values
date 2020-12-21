@@ -1,6 +1,6 @@
-package com.example.domainmodeling.mobprogramming;
+package com.example.domainmodeling.anemic;
 
-import com.example.domainmodeling.mobprogramming.solution.InvalidCustomerException;
+import com.example.domainmodeling.anemic.solution.InvalidCustomerException;
 
 public class ShoppingCartValidator {
 

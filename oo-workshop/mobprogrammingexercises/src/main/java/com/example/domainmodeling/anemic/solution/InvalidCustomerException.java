@@ -1,4 +1,4 @@
-package com.example.domainmodeling.mobprogramming.solution;
+package com.example.domainmodeling.anemic.solution;
 
 public class InvalidCustomerException extends Throwable {
 }

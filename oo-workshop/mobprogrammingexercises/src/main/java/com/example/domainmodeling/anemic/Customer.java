@@ -1,4 +1,4 @@
-package com.example.domainmodeling.mobprogramming;
+package com.example.domainmodeling.anemic;
 
 public class Customer {
 
