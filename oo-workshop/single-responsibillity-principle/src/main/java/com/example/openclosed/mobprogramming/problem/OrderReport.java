@@ -23,12 +23,12 @@ public class OrderReport {
     }
 
     public String invoice(){
-        var message = "Invoice " + this.customer + " " + this.total;
+        String message = "Invoice " + this.customer + " " + this.total;
         return message;
     }
 
     public String shippingLabel(){
-        var message = "Shipping Label " + this.customer;
+        String message = "Shipping Label " + this.customer;
         return message;
     }
 }

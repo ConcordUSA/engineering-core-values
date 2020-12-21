@@ -1,28 +1,30 @@
 package com.example.openclosed.slides.withoutOC;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class MessagePoorRefactorTest {
 
     @Test
     void sendEmail() {
-        var given = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
-        var when = given.sendEmail();
+        final MessagePoorRefactor message
+                = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
+        final String emailMessage =
+                message.sendEmail();
 
         // then
-        assertTrue(when.contains("Email"));
-        assertTrue(when.contains("recipient@email.com"));
+        assertTrue(emailMessage.contains("Email"));
+        assertTrue(emailMessage.contains("recipient@email.com"));
     }
 
     @Test
     void sendSMS() {
-        var given = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
-        var when = given.sendSMS();
+        final MessagePoorRefactor message = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
+        final String smsMessage = message.sendSMS();
 
         // then
-        assertTrue(when.contains("SMS"));
-        assertTrue(when.contains("111-111-1111"));
+        assertTrue(smsMessage.contains("SMS"));
+        assertTrue(smsMessage.contains("111-111-1111"));
     }
 }

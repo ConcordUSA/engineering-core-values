@@ -6,7 +6,7 @@ public class Invoice extends OrderReport {
     }
 
     public String print() {
-        var message = "Invoice: " + this.customer + " " + this.total;
+        String message = "Invoice: " + this.customer + " " + this.total;
         return message;
     }
 }

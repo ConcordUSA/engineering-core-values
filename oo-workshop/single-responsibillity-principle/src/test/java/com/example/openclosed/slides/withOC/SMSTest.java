@@ -1,18 +1,18 @@
 package com.example.openclosed.slides.withOC;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class SMSTest {
 
     @Test
     void send() {
-        var given = new SMS("OOP! Yeah you know me!", "111-111-1111");
-        var when = given.send();
+        final SMS sms = new SMS("OOP! Yeah you know me!", "111-111-1111");
+        final String smsMessage = sms.send();
 
         // then
-        assertTrue(when.contains("SMS:"));
-        assertTrue(when.contains("111-111-1111"));
+        assertTrue(smsMessage.contains("SMS:"));
+        assertTrue(smsMessage.contains("111-111-1111"));
     }
 }

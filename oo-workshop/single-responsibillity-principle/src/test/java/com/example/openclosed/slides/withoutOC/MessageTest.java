@@ -1,26 +1,26 @@
 package com.example.openclosed.slides.withoutOC;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class MessageTest {
 
     @Test
     void sendEmail() {
-        var given = new Message("OOP, yeah you know me!");
-        var when = given.sendEmail();
+        final Message message = new Message("OOP, yeah you know me!");
+        final String email = message.sendEmail();
 
         // then
-        assertTrue(when.contains("Email"));
+        assertTrue(email.contains("Email"));
     }
 
     @Test
     void sendSMS() {
-        var given = new Message("OOP, yeah you know me!");
-        var when = given.sendSMS();
+        final Message message = new Message("OOP, yeah you know me!");
+        final String smsMessage = message.sendSMS();
 
         // then
-        assertTrue(when.contains("SMS"));
+        assertTrue(smsMessage.contains("SMS"));
     }
 }

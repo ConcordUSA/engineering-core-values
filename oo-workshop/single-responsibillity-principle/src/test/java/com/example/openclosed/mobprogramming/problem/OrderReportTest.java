@@ -1,15 +1,15 @@
 package com.example.openclosed.mobprogramming.problem;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class OrderReportTest {
 
     @Test
     void invoice() {
-        var given = new OrderReport("Adam Schnaare",1000);
-        var when = given.invoice();
+        final OrderReport given = new OrderReport("Adam Schnaare",1000);
+        final String when = given.invoice();
 
         // then
         assertTrue(when.contains("Invoice"));
@@ -19,8 +19,8 @@ class OrderReportTest {
 
     @Test
     void shippingLabel() {
-        var given = new OrderReport("Adam Schnaare",1000);
-        var when = given.shippingLabel();
+        final OrderReport given = new OrderReport("Adam Schnaare",1000);
+        final String when = given.shippingLabel();
 
         // then
         assertTrue(when.contains("Shipping Label"));

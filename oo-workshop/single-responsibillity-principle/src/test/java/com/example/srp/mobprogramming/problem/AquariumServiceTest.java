@@ -1,8 +1,7 @@
 package com.example.srp.mobprogramming.problem;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -16,8 +15,8 @@ public class AquariumServiceTest {
     private Aquarium aquarium;
     private AquariumService tested;
 
-    @BeforeEach
-    public void setup(){
+    @Before
+    public void setup() {
 
         filterPowerCord = new PowerCord();
         heaterPowerCord = new PowerCord();
@@ -29,36 +28,34 @@ public class AquariumServiceTest {
     }
 
     @Test
-    public void whenServiceAquariumPlantsDontDie(){
+    public void whenServiceAquariumPlantsDontDie() {
         tested.serviceAquarium();
 
         //plants probably tell you when they die so we're good
     }
 
-    @Test
-    public void whenServiceAquariumTwicePlantsDoDie(){
-        Assertions.assertThrows(PlantDeathException.class, () -> {
-            tested.serviceAquarium();
-            tested.serviceAquarium();
-        });
+    @Test(expected = PlantDeathException.class)
+    public void whenServiceAquariumTwicePlantsDoDie() {
+        tested.serviceAquarium();
+        tested.serviceAquarium();
     }
 
     @Test
-    public void whenServiceAquariumFilterEndsPoweredOn(){
+    public void whenServiceAquariumFilterEndsPoweredOn() {
         tested.serviceAquarium();
 
         assertThat(filterPowerCord.isPowered(), is(true));
     }
 
     @Test
-    public void whenServiceAquariumAquariumIsFull(){
+    public void whenServiceAquariumAquariumIsFull() {
         tested.serviceAquarium();
 
         assertThat(aquarium.getWaterLevel(), is(aquarium.getMaxWaterLevel()));
     }
 
     @Test
-    public void whenServiceAquariumNothingIsChilly(){
+    public void whenServiceAquariumNothingIsChilly() {
         tested.serviceAquarium();
 
         assertThat(heater.getTemperature() >= 82, is(true));

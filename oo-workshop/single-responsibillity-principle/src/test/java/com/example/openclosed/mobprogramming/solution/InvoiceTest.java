@@ -1,18 +1,18 @@
 package com.example.openclosed.mobprogramming.solution;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class InvoiceTest {
 
     @Test
     void print() {
-        var given =  new Invoice("Adam Schnaare", 1000);
-        var when = given.print();
+        final Invoice invoice =  new Invoice("Adam Schnaare", 1000);
+        final String invoiceLabel = invoice.print();
 
         // then
-        assertTrue(when.contains("Adam Schnaare"));
-        assertTrue(when.contains("1000"));
+        assertTrue(invoiceLabel.contains("Adam Schnaare"));
+        assertTrue(invoiceLabel.contains("1000"));
     }
 }

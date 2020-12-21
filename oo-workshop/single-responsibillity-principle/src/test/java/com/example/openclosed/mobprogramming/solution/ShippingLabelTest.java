@@ -1,18 +1,18 @@
 package com.example.openclosed.mobprogramming.solution;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 
 class ShippingLabelTest {
 
     @Test
     void print() {
-        var given =  new ShippingLabel("Adam Schnaare", 1000, "212 This Lane");
-        var when = given.print();
+        final ShippingLabel shippingLabel =  new ShippingLabel("Adam Schnaare", 1000, "212 This Lane");
+        final String shippingLabelText = shippingLabel.print();
 
         // then
-        assertTrue(when.contains("Adam Schnaare"));
-        assertTrue(when.contains("212 This Lane"));
+        assertTrue(shippingLabelText.contains("Adam Schnaare"));
+        assertTrue(shippingLabelText.contains("212 This Lane"));
     }
 }

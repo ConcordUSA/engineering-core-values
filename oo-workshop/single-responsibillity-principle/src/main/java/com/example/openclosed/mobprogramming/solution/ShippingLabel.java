@@ -9,7 +9,7 @@ public class ShippingLabel extends OrderReport {
     }
 
     public String print(){
-        var message = "Shipping Label: " + this.customer + " " + this.address;
+        String message = "Shipping Label: " + this.customer + " " + this.address;
         return message;
     }
 }
