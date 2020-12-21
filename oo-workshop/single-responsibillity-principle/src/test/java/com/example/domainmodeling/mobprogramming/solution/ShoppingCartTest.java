@@ -27,5 +27,8 @@ public class ShoppingCartTest {
     public void givenAShoppingCartWithTwoItem_whenAnItemThatDoesNotExistIsRemoved_thenShoppingCartContainsSameTwoItems(){
 
     }
-//    public
+
+    public void givenAShoppingCartWithThreeItems_whenItemsAreRetrieved_itemsAreSortedInDescendingOrderByPrice(){
+
+    }
 }

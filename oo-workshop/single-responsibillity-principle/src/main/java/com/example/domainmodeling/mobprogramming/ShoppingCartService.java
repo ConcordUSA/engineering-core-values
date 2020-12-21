@@ -3,6 +3,7 @@ package com.example.domainmodeling.mobprogramming;
 import com.example.domainmodeling.mobprogramming.solution.InvalidCustomerException;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,5 +55,17 @@ public class ShoppingCartService {
         }
 
         return total;
+    }
+
+    public List<CartItem> getItemsInCart(final String shoppingCartId) {
+        final ShoppingCart shoppingCart = this.repository.find(shoppingCartId);
+
+        final List<CartItem> cartItems = shoppingCart.getItems()
+                .stream()
+                .sorted(Comparator.comparing(CartItem::getPrice))
+                .collect(Collectors.toList());
+
+        return cartItems;
+
     }
 }
