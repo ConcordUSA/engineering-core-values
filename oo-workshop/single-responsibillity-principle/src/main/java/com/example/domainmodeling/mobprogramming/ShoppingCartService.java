@@ -14,13 +14,11 @@ public class ShoppingCartService {
         this.repository = repository;
     }
 
-
     public ShoppingCart createShoppingCart(final ShoppingCart shoppingCart) throws InvalidCustomerException {
         ShoppingCartValidator.IsShoppingCartValid(shoppingCart);
 
         return this.repository.save(shoppingCart);
     }
-
 
     public ShoppingCart addItemToShoppingCart(final String shoppingCartId, final CartItem item) {
         final ShoppingCart shoppingCart = this.repository.find(shoppingCartId);

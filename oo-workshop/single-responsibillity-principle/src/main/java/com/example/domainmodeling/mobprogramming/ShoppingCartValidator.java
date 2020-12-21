@@ -5,7 +5,7 @@ import com.example.domainmodeling.mobprogramming.solution.InvalidCustomerExcepti
 public class ShoppingCartValidator {
 
     public static boolean IsShoppingCartValid(final ShoppingCart shoppingCart) throws InvalidCustomerException {
-        if(shoppingCart.getCustomer() == null){
+        if (shoppingCart.getCustomer() == null) {
             throw new InvalidCustomerException();
         }
         return true;

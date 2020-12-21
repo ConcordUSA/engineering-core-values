@@ -24,5 +24,8 @@ public class ShoppingCartTest {
     public void givenAShoppingCartWithTwoItem_whenAnItemIsRemoved_thenShoppingCartTotalEqualsTotalOfRemainingItem(){
 
     }
+    public void givenAShoppingCartWithTwoItem_whenAnItemThatDoesNotExistIsRemoved_thenShoppingCartContainsSameTwoItems(){
+
+    }
 //    public
 }
