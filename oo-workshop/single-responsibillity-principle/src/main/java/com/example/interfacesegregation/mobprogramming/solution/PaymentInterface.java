@@ -1,5 +1,5 @@
 package com.example.interfacesegregation.mobprogramming.solution;
 
 public interface PaymentInterface {
-    void payForOrder();
+public void payForOrder();
 }

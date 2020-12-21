@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TransportationObjectTest {
     @Test
-    void whenBatteryChargedIsTrueThenMessageContainsStartingEngine(){
+    public void whenBatteryChargedIsTrueThenMessageContainsStartingEngine() {
         //given
         Car car = new Car();
         Bus bus = new Bus();
@@ -21,7 +21,7 @@ public class TransportationObjectTest {
     }
 
     @Test
-    void whenBatteryChargedIsFalseThenMessageContainsChargeBattery(){
+    public void whenBatteryChargedIsFalseThenMessageContainsChargeBattery() {
         //given
         Car car = new Car();
         Bus bus = new Bus();
@@ -36,7 +36,7 @@ public class TransportationObjectTest {
     }
 
     @Test
-    void whenForceAppliedIsTrueThenMessageContainsStartMoving(){
+    public void whenForceAppliedIsTrueThenMessageContainsStartMoving() {
         //given
         Bicycle bicycle = new Bicycle();
         Skateboard skateboard = new Skateboard();
@@ -51,7 +51,7 @@ public class TransportationObjectTest {
     }
 
     @Test
-    void whenForceAppliedIsFalseThenMessageContainsApplyMoreForce(){
+    public void whenForceAppliedIsFalseThenMessageContainsApplyMoreForce() {
         //given
         Bicycle bicycle = new Bicycle();
         Skateboard skateboard = new Skateboard();

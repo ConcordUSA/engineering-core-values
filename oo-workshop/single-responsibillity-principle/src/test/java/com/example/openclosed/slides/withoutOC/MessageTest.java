@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class MessageTest {
 
     @Test
-    void sendEmail() {
+public void sendEmail() {
         final Message message = new Message("OOP, yeah you know me!");
         final String email = message.sendEmail();
 
@@ -16,7 +16,7 @@ class MessageTest {
     }
 
     @Test
-    void sendSMS() {
+public void sendSMS() {
         final Message message = new Message("OOP, yeah you know me!");
         final String smsMessage = message.sendSMS();
 

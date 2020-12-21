@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class OnlinePaymentImplTest {
     @Test
-    void payOnline(){
+    public void payOnline() {
         //arrange
         OnlinePaymentImpl given = new OnlinePaymentImpl("6.99");
 

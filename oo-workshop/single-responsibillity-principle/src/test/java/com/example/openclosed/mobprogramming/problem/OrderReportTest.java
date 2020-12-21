@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class OrderReportTest {
 
     @Test
-    void invoice() {
+public void invoice() {
         final OrderReport given = new OrderReport("Adam Schnaare",1000);
         final String when = given.invoice();
 
@@ -18,7 +18,7 @@ class OrderReportTest {
     }
 
     @Test
-    void shippingLabel() {
+public void shippingLabel() {
         final OrderReport given = new OrderReport("Adam Schnaare",1000);
         final String when = given.shippingLabel();
 

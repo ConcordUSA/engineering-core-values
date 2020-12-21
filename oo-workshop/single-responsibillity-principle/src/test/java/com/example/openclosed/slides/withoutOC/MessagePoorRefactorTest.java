@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class MessagePoorRefactorTest {
 
     @Test
-    void sendEmail() {
+public void sendEmail() {
         final MessagePoorRefactor message
                 = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
         final String emailMessage =
@@ -19,7 +19,7 @@ class MessagePoorRefactorTest {
     }
 
     @Test
-    void sendSMS() {
+public void sendSMS() {
         final MessagePoorRefactor message = new MessagePoorRefactor("My message","recipient@email.com","111-111-1111");
         final String smsMessage = message.sendSMS();
 

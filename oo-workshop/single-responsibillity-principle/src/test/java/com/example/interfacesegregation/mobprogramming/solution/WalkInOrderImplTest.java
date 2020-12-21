@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class WalkInOrderImplTest {
     @Test
-    void walkInCustomerOrder(){
+    public void walkInCustomerOrder() {
         //arrange
         WalkInOrderImpl given = new WalkInOrderImpl("Roger Miller", "Cheese Sandwich");
 

@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ObjectsWithoutEnginesTest {
     @Test
-    void whenForceAppliedIsTrueThenMessageContainsStartMoving(){
+public void whenForceAppliedIsTrueThenMessageContainsStartMoving(){
         //given
         Bicycle bicycle = new Bicycle();
         Skateboard skateboard = new Skateboard();
@@ -21,7 +21,7 @@ public class ObjectsWithoutEnginesTest {
     }
 
     @Test
-    void whenForceAppliedIsFalseThenMessageContainsApplyMoreForce(){
+public void whenForceAppliedIsFalseThenMessageContainsApplyMoreForce(){
         //given
         Bicycle bicycle = new Bicycle();
         Skateboard skateboard = new Skateboard();

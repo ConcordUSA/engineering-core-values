@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ObjectsWithEnginesTest {
     @Test
-    void whenBatteryChargedIsTrueThenMessageContainsStartingEngine(){
+public void whenBatteryChargedIsTrueThenMessageContainsStartingEngine(){
         //given
         Car car = new Car();
         Bus bus = new Bus();
@@ -21,7 +21,7 @@ public class ObjectsWithEnginesTest {
     }
 
     @Test
-    void whenBatteryChargedIsFalseThenMessageContainsChargeBattery(){
+public void whenBatteryChargedIsFalseThenMessageContainsChargeBattery(){
         //given
         Car car = new Car();
         Bus bus = new Bus();

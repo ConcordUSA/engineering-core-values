@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class ShippingLabelTest {
 
     @Test
-    void print() {
+public void print() {
         final ShippingLabel shippingLabel =  new ShippingLabel("Adam Schnaare", 1000, "212 This Lane");
         final String shippingLabelText = shippingLabel.print();
 

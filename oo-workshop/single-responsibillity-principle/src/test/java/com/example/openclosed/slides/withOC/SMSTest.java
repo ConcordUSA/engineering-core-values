@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class SMSTest {
 
     @Test
-    void send() {
+public void send() {
         final SMS sms = new SMS("OOP! Yeah you know me!", "111-111-1111");
         final String smsMessage = sms.send();
 

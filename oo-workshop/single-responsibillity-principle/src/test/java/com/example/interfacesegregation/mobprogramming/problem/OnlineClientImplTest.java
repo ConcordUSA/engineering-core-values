@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class OnlineClientImplTest {
     @Test
-    void acceptOnlineOrder(){
+    public void acceptOnlineOrder() {
         //arrange
         OnlineClientImpl given = new OnlineClientImpl("Brandon Gilbert", "Salad", "6.99");
 
@@ -19,9 +19,9 @@ public class OnlineClientImplTest {
     }
 
     @Test
-    void payOnline(){
+    public void payOnline() {
         //arrange
-        OnlineClientImpl given = new OnlineClientImpl("Brandon Gilbert", "Salad","6.99");
+        OnlineClientImpl given = new OnlineClientImpl("Brandon Gilbert", "Salad", "6.99");
 
         //act
         String when = given.payOnline();

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;;
 class EmailTest {
 
     @Test
-    void send() {
+public void send() {
         final Email email = new Email("OOP! Yeah you know me!", "receiver@email.com");
         final String emailMessage = email.send();
 

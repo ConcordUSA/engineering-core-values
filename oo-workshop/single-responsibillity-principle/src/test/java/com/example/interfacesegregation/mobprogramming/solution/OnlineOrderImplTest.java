@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class OnlineOrderImplTest {
     @Test
-    void acceptOnlineOrder(){
+    public void acceptOnlineOrder() {
         //arrange
         OnlineOrderImpl given = new OnlineOrderImpl("Brandon Gilbert", "Salad");
 

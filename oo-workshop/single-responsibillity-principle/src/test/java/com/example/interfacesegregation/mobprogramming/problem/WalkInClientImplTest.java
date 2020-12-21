@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class WalkInClientImplTest {
     @Test
-    void walkInCustomerOrder(){
+    public void walkInCustomerOrder() {
         //arrange
         WalkInClientImpl given = new WalkInClientImpl("Roger Miller", "Cheese Sandwich", "9.99");
 
@@ -19,7 +19,7 @@ public class WalkInClientImplTest {
     }
 
     @Test
-    void payInPerson(){
+    public void payInPerson() {
         //arrange
         WalkInClientImpl given = new WalkInClientImpl("Roger Miller", "Cheese Sandwich", "9.99");
 

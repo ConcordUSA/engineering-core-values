@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 class InvoiceTest {
 
     @Test
-    void print() {
+public void print() {
         final Invoice invoice =  new Invoice("Adam Schnaare", 1000);
         final String invoiceLabel = invoice.print();
 
