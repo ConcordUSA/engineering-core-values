@@ -4,11 +4,11 @@ import org.junit.Test;;
 
 import static org.junit.Assert.assertTrue;
 
-class InvoiceTest {
+public class InvoiceTest {
 
     @Test
-public void print() {
-        final Invoice invoice =  new Invoice("Adam Schnaare", 1000);
+    public void print() {
+        final Invoice invoice = new Invoice("Adam Schnaare", 1000);
         final String invoiceLabel = invoice.print();
 
         // then

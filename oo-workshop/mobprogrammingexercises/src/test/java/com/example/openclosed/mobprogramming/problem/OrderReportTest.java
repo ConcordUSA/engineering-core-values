@@ -4,11 +4,11 @@ import org.junit.Test;;
 
 import static org.junit.Assert.assertTrue;
 
-class OrderReportTest {
+public class OrderReportTest {
 
     @Test
-public void invoice() {
-        final OrderReport given = new OrderReport("Adam Schnaare",1000);
+    public void invoice() {
+        final OrderReport given = new OrderReport("Adam Schnaare", 1000);
         final String when = given.invoice();
 
         // then
@@ -18,8 +18,8 @@ public void invoice() {
     }
 
     @Test
-public void shippingLabel() {
-        final OrderReport given = new OrderReport("Adam Schnaare",1000);
+    public void shippingLabel() {
+        final OrderReport given = new OrderReport("Adam Schnaare", 1000);
         final String when = given.shippingLabel();
 
         // then
