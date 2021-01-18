@@ -1,6 +1,6 @@
 export interface RestaurantInterface {
-    acceptOnlineOrder(): string;
-    payOnline(): string;
-    walkInCustomerOrder(): string;
-    payInPerson(): string;
+    acceptOnlineOrder(): string
+    payOnline(): string
+    walkInCustomerOrder(): string
+    payInPerson(): string
 }

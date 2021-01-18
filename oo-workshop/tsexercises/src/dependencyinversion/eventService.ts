@@ -2,18 +2,18 @@ import {Event} from './event'
 import {SimpleEventDao} from './simpleEventDao'
 
 export class EventService {
-    private simpleCustomerDao: SimpleEventDao;
+    private simpleCustomerDao: SimpleEventDao
 
     public constructor(simpleCustomerDao: SimpleEventDao){
-        this.simpleCustomerDao = simpleCustomerDao;
+        this.simpleCustomerDao = simpleCustomerDao
     }
 
     public findById(id: number): Event | undefined{
-        return this.simpleCustomerDao.findById(id);
+        return this.simpleCustomerDao.findById(id)
     }
 
     public findAll(): Event[]{
-        return this.simpleCustomerDao.findAll();
+        return this.simpleCustomerDao.findAll()
     }
 
 }

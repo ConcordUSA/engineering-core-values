@@ -1,6 +1,6 @@
-import { ShoppingCart } from "./shoppingCart";
+import { ShoppingCart } from "./shoppingCart"
 
 export interface ShoppingCartRepository{
-    save(shoppingCart: ShoppingCart): ShoppingCart;
-    find(shoppingCartId: string): ShoppingCart;
+    save(shoppingCart: ShoppingCart): ShoppingCart
+    find(shoppingCartId: string): ShoppingCart
 }

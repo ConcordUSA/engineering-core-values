@@ -5,8 +5,8 @@ export class ShoppingCartValidator {
 
     public static IsShoppingCartValid(shoppingCart: ShoppingCart): boolean | InvalidCustomerError {
         if (shoppingCart.customer == null) {
-            return new InvalidCustomerError();
+            return new InvalidCustomerError()
         }
-        return true;
+        return true
     }
 }
