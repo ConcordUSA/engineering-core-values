@@ -11,21 +11,21 @@ describe('event service', () => {
         event1 = new Event("concert")
         event2 = new Event("yarn festival")
 
-        let events: Map<number, Event> = new Map([
+        const events: Map<number, Event> = new Map([
             [1, event1],
             [2, event2]
         ])
-        let simpleEventDao = new SimpleEventDao(events)
+        const simpleEventDao = new SimpleEventDao(events)
         tested = new EventService(simpleEventDao)
     })
 
     it('should find present event by id', () => {
-        let actualEvent: Event | undefined = tested.findById(1)
+        const actualEvent: Event | undefined = tested.findById(1)
         expect(actualEvent).toEqual(event1)
     })
 
     it('should find all present events', () => {
-        let actualEvents: Event[] = tested.findAll()
+        const actualEvents: Event[] = tested.findAll()
         expect(actualEvents).toEqual([event1, event2])
     })
 })

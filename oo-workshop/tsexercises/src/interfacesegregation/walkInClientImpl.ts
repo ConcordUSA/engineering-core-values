@@ -1,4 +1,3 @@
-import { format } from "path"
 import {RestaurantInterface} from './restaurantInterface'
 
 export class WalkInClientImpl implements RestaurantInterface{
@@ -23,12 +22,12 @@ export class WalkInClientImpl implements RestaurantInterface{
     }
     
     public walkInCustomerOrder(): string{
-        let message = "Walk-in order from " + this.name + " for " + this.food
+        const message = "Walk-in order from " + this.name + " for " + this.food
         return message
     }
 
     public payInPerson(): string{
-        let message = "In-person payment for $" + this.price + " processed"
+        const message = "In-person payment for $" + this.price + " processed"
         return message
     }
 }

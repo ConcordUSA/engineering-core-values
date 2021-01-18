@@ -12,12 +12,12 @@ export class OnlineClientImpl implements RestaurantInterface {
     }
 
     public acceptOnlineOrder(): string {
-        let message: string = "Online order from " + this.name + " for " + this.food
+        const message: string = "Online order from " + this.name + " for " + this.food
         return message
     }
 
     public payOnline(): string {
-        let message: string = "Online payment for $" + this.price + " processed"
+        const message: string = "Online payment for $" + this.price + " processed"
         return message
     }
 

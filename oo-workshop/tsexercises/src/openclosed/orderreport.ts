@@ -8,12 +8,12 @@ export class OrderReport {
     }
 
     public invoice(): string{
-        let message = "Invoice " + this.customer + " " + this.total
+        const message = "Invoice " + this.customer + " " + this.total
         return message
     }
 
     public shippingLabel(): string{
-        let message = "Shipping Label " + this.customer
+        const message = "Shipping Label " + this.customer
         return message
     }
 }

@@ -1,21 +1,5 @@
-class Event{
-    public eventName: string
-    public eventDate: string
-    public eventCost: string
-    public eventLocation: string
-
-    public constructor(eventName: string, eventDate: string, eventCost: string, eventLocation: string){
-        this.eventName = eventName
-        this.eventDate = eventDate
-        this.eventCost = eventCost
-        this.eventLocation = eventLocation
-    }
-}
-
-interface EventRepo {
-    getAllEvents(): Event[]
-    saveAllEvents(events: Event[]): boolean
-}
+import {Event} from './event'
+import {EventRepo} from './eventRepo'
 
 export class EventApplication{
     private eventRepo: EventRepo
@@ -25,15 +9,15 @@ export class EventApplication{
     }
 
     public scheduleEvent(eventName: string, eventDate: string, eventCost: string, eventLocation: string): boolean{
-        let validEvent: boolean = this.validEventName(eventName) && 
+        const validEvent: boolean = this.validEventName(eventName) && 
                                     this.validEventDate(eventDate) && 
                                     this.validEventLocation(eventLocation) && 
                                     this.validateEventCost(eventCost)
         if(!validEvent) {
             return false
         }
-        let newEvent = new Event(eventName, eventDate, eventCost, eventLocation)
-        let existingEvents: Event[] = this.eventRepo.getAllEvents()
+        const newEvent = new Event(eventName, eventDate, eventCost, eventLocation)
+        const existingEvents: Event[] = this.eventRepo.getAllEvents()
         if(this.existingEventsContainsNewEvent(existingEvents, newEvent)){
             return false
         }
@@ -44,15 +28,15 @@ export class EventApplication{
     }
 
     public updateNamedEvent(eventName: string, eventDate: string, eventCost: string, eventLocation: string): boolean{
-        let validEvent: boolean = this.validEventName(eventName) && 
+        const validEvent: boolean = this.validEventName(eventName) && 
                                     this.validEventDate(eventDate) && 
                                     this.validEventLocation(eventLocation) && 
                                     this.validateEventCost(eventCost)
         if(!validEvent) {
             return false
         }
-        let newEvent = new Event(eventName, eventDate, eventCost, eventLocation)
-        let existingEvents: Event[] = this.eventRepo.getAllEvents()
+        const newEvent = new Event(eventName, eventDate, eventCost, eventLocation)
+        const existingEvents: Event[] = this.eventRepo.getAllEvents()
         
         if(this.replaceExistingEventWithNewEvent(existingEvents, newEvent)){
             return this.eventRepo.saveAllEvents(existingEvents)
