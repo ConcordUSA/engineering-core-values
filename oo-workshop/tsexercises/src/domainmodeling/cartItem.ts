@@ -1,5 +1,4 @@
 export class CartItem{
-    //todo how do we feel about direct access vs getter/setter?
     id: string
     name: string
     price: number
