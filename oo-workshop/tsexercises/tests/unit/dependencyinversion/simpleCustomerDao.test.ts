@@ -7,7 +7,7 @@ describe('simple event dao', () => {
     let event2: Event
 
     beforeEach(() => {
-        const customers: Map<number, Event> = new Map<>()
+        const customers: Map<number, Event> = new Map<number, Event>()
         event1 = new Event("birthday party")
         event2 = new Event("happy hour")
         customers.set(1, event1)
