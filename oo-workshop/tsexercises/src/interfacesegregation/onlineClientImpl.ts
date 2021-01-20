@@ -1,18 +1,19 @@
-import { RestaurantInterface } from "./restaurantInterface"
+import { StoreInterface } from "./storeInterface"
 
-export class OnlineClientImpl implements RestaurantInterface {
-    public name: string
-    public food: string
+export class OnlineClientImpl implements StoreInterface {
+    //a more complete solution may use the shopping cart from the domain modeling exercise
+    public customer: string
+    public product: string
     public price: string
 
     public constructor(name: string, food: string, price: string){
-        this.name = name
-        this.food = food
+        this.customer = name
+        this.product = food
         this.price = price
     }
 
     public acceptOnlineOrder(): string {
-        const message: string = "Online order from " + this.name + " for " + this.food
+        const message: string = "Online order from " + this.customer + " for " + this.product
         return message
     }
 

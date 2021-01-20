@@ -1,13 +1,14 @@
-import {RestaurantInterface} from './restaurantInterface'
+import {StoreInterface} from './storeInterface'
 
-export class WalkInClientImpl implements RestaurantInterface{
-    public name: string
-    public food: string
+export class WalkInClientImpl implements StoreInterface{
+    //a more complete solution may use the shopping cart from the domain modeling exercise
+    public customer: string
+    public product: string
     public price: string
 
     public constructor(name: string, food: string, price: string){
-        this.name = name
-        this.food = food
+        this.customer = name
+        this.product = food
         this.price = price
     }
 
@@ -22,7 +23,7 @@ export class WalkInClientImpl implements RestaurantInterface{
     }
     
     public walkInCustomerOrder(): string{
-        const message = "Walk-in order from " + this.name + " for " + this.food
+        const message = "Walk-in order from " + this.customer + " for " + this.product
         return message
     }
 
