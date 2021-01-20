@@ -3,8 +3,8 @@ import {Product} from './product'
 export class SimpleProductDao {
     private products: Map<number, Product>
 
-    constructor(customers: Map<number, Product>){
-        this.products = customers
+    constructor(products: Map<number, Product>){
+        this.products = products
     }
 
     findById(id: number): Product | undefined{
