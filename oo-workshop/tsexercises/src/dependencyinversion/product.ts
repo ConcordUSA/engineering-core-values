@@ -1,4 +1,4 @@
-export class Event{
+export class Product{
     readonly name: string
     
     public constructor(name: string){
