@@ -13,7 +13,7 @@ describe('order report', () => {
 
     it('should create a shipping label', () => {
         const given: OrderReport = new OrderReport("Adam Schnaare", 1000)
-        const when: string = given.invoice()
+        const when: string = given.shippingLabel()
 
         // then
         expect(when).toContain("Shipping Label")
