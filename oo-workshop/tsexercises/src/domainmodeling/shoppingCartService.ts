@@ -1,4 +1,4 @@
-import {CartItem} from './cartItem'
+import {Product} from './product'
 import {ShoppingCart} from './shoppingCart'
 import {ShoppingCartRepository} from './shoppingCartRepository'
 
@@ -10,7 +10,7 @@ export class ShoppingCartService{
         this.repository = repository
     }
 
-    public addItemToShoppingCart(shoppingCartId: string, item: CartItem): ShoppingCart {
+    public addItemToShoppingCart(shoppingCartId: string, item: Product): ShoppingCart {
         const shoppingCart: ShoppingCart = this.repository.find(shoppingCartId)
 
         shoppingCart.items.push(item)
@@ -24,7 +24,7 @@ export class ShoppingCartService{
         const shoppingCart: ShoppingCart = this.repository.find(shoppingCartId)
 
         let deletionIndex: number = -1
-        shoppingCart.items.forEach((item: CartItem, itemIndex) => {
+        shoppingCart.items.forEach((item: Product, itemIndex) => {
             if(item.id === itemId){
                 deletionIndex = itemIndex
             }
@@ -41,14 +41,14 @@ export class ShoppingCartService{
         const shoppingCart: ShoppingCart = this.repository.find(shoppingCartId)
 
         let total: number = 0
-        shoppingCart.items.forEach((item: CartItem) => {
+        shoppingCart.items.forEach((item: Product) => {
             total = total + item.price
         })
     
         return total
     }
 
-    public getItemsInCart(shoppingCartId: string): CartItem[] {
+    public getItemsInCart(shoppingCartId: string): Product[] {
         const shoppingCart: ShoppingCart = this.repository.find(shoppingCartId)
 
         return shoppingCart.items

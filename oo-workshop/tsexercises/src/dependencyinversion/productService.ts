@@ -4,8 +4,8 @@ import {SimpleProductDao} from './simpleProductDao'
 export class ProductService {
     private simpleProductDao: SimpleProductDao
 
-    public constructor(simpleCustomerDao: SimpleProductDao){
-        this.simpleProductDao = simpleCustomerDao
+    public constructor(simpleProductDao: SimpleProductDao){
+        this.simpleProductDao = simpleProductDao
     }
 
     public findById(id: number): Product | undefined{

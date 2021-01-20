@@ -1,13 +1,13 @@
-import { CartItem } from "./cartItem"
+import { Product } from "./product"
 
 import {Customer} from './customer'
 
 export class ShoppingCart {
     id: string
-    items: CartItem[]
+    items: Product[]
     customer: Customer
 
-    constructor(id: string, items: CartItem[], customer: Customer){
+    constructor(id: string, items: Product[], customer: Customer){
         this.id = id
         this.items = items
         this.customer = customer
