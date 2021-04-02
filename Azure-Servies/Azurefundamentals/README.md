@@ -1,16 +1,15 @@
 
-This module contains high level intoduction of Azure fundamentals:
+This module contains high level introduction of Azure fundamentals:
 
 ## Accounts
 
-1. Cloud based services: User to utilize to build infrastructure and platforms in Microsoft operated data centers.
-
+1. Cloud based services: Users utilize to build infrastructure and platforms in Microsoft operated data centers.
 2. Azure Account: To access microsoft services the highest level mechanism that you're going to need to do that is an account this uniquely identifies you as an azure user inside of portal.
-     . Uniquely identifies you in azure. 
-     . And you can apply security policies and control access to resources in azure and azure administartor.
 
-## Subscribitons 
-These are used to provide user access to Microsoft.
+     . Uniquely identifies you in Azure. 
+     . And you can apply security policies and control access to resources in azure and azure administrator.
+## Subscriptions 
+Subscriptions are used to provide user access to Microsoft.
 1. Subscriptions grant you access to microsoft azure resources.
 2. You can have several subscriptions associated with an account
 3. Types of subscriptions: 
@@ -29,7 +28,7 @@ Manageable items that is available in Azure
 
 ## Resource Manager
 
-1. Resource Manager: Allows you to build resource groups that group elements of a solution together, and with that we can reuse templates for subsequent deployments and also resource manager also provides a consistent management layer in tooling things like Azure portal, Cloudshell, Powershell, Azure CLI and some APIs and SDKs are all available to us and our toolbox for managing our azure solutions. 
+1. Resource Manager: Allows you to build resource groups that group elements of a solution together, and with that we can reuse templates for subsequent deployments and resource manager also provides a consistent management layer in tooling things like Azure portal, Cloudshell, Powershell, Azure CLI and some APIs and SDKs are all available to us and our toolbox for managing our azure solutions. 
 2. We can also leverage resource managers resource groups to establish a security boundary for role based access controls around particular solutions so we can assign the respknsibility for particular solution which is logical group inside of resource manager, and provide the correct level of access to the group that needs potentially administrative access for that particular solution.
 3. we can also leverage reosurce manager and resorce groups to establish the grouping of costs associated with a particular set of resources and we can roll that up and provide the costs associated with a particular resource manager or resource group solution and bill that back to appropriate business group inside of our organization.
 
