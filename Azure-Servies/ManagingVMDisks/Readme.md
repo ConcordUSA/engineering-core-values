@@ -1,8 +1,6 @@
 
 This module is about understanding Azure disk storage and we are gonna look at various types of storage and storage accounts are availabe inside of azure. Then we are going to look at virtual machines disk topology so that we can understand how those disks presented up into the operating system and then we gonna take a look at some common administrative tasks like adding a virtual disk, removing a disk and resizing a disk and also snapshots.
 
-
-
 # Azure Disk Storage
 
 . Disks - VHDs attached to VMs

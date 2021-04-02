@@ -29,13 +29,13 @@ Manageable items that is available in Azure
 ## Resource Manager
 
 1. Resource Manager: Allows you to build resource groups that group elements of a solution together, and with that we can reuse templates for subsequent deployments and resource manager also provides a consistent management layer in tooling things like Azure portal, Cloudshell, Powershell, Azure CLI and some APIs and SDKs are all available to us and our toolbox for managing our azure solutions. 
-2. We can also leverage resource managers resource groups to establish a security boundary for role based access controls around particular solutions so we can assign the respknsibility for particular solution which is logical group inside of resource manager, and provide the correct level of access to the group that needs potentially administrative access for that particular solution.
+2. We can also leverage resource managers resource groups to establish a security boundary for role based access controls around particular solutions so we can assign the responsibility for particular solution which is logical group inside of resource manager, and provide the correct level of access to the group that needs potentially administrative access for that particular solution.
 3. we can also leverage reosurce manager and resorce groups to establish the grouping of costs associated with a particular set of resources and we can roll that up and provide the costs associated with a particular resource manager or resource group solution and bill that back to appropriate business group inside of our organization.
 
 ## Azure Regions 
 
-1. A Region is as set of data centers deployed within a latency defined perimeter.
-2. Many egions to choose from, currently there i 42 Regions around the world with plans announced for 12 additional regions.
+1. A Region is a set of data centers deployed within a latency defined perimeter.
+2. Many regions to choose from, currently there are 42 Regions around the world with plans announced for 12 additional regions.
 
 ## Availability Zones
 
@@ -64,6 +64,6 @@ When we are provisiong services in Microsoft Azure, there are two fundamental se
 ## Virtual Machine Images
 
 1. Inside of Microsoft Azure you have Azure marketplace images and with these are a collection of prepackaged applications or services provided by Microsoft and other third parties for you to consume.
-2. Most commomly we will see opertaing systems like Windows Server, Windows 7/8 images to deploy on virtual machines inside of Azure and also we have RedHat Linux, Ubuntu Linux and many available as a virtual machine marketplace image.
+2. Most commonly we will see opertaing systems like Windows Server, Windows 7/8 images to deploy on virtual machines inside of Azure and also we have RedHat Linux, Ubuntu Linux and many available as a virtual machine marketplace image.
 3. In addition to operating system we also have application infrastructure here we have third party networking components like net scaler from Citrix or VPN.
 4. Finally we have custom images and this allows you to pacakge applications and settings into the virtual machine image that could be used as a base image for deployment of additional virtual machines inside of Azure for you.
