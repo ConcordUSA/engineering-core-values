@@ -7,6 +7,7 @@ This module contains high level introduction of Azure fundamentals:
 2. Azure Account: To access microsoft services the highest level mechanism that you're going to need to do that is an account this uniquely identifies you as an azure user inside of portal.
 
      . Uniquely identifies you in Azure. 
+     
      . And you can apply security policies and control access to resources in azure and azure administrator.
 ## Subscriptions 
 Subscriptions are used to provide user access to Microsoft.
