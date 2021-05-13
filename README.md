@@ -15,9 +15,9 @@ The core values are:
 
 In order to realize these values there are 8 practices that we as an organization need to agree to adhere to. These are:
 
-### Vertical Slicing
+### [Vertical Slicing](practices/verticalSlicing/readme.md)
 
-Business value has been delivered at the end every feature/story. This is as opposed to "horizontal slicing" i.e. creating two different user stories for the frontend and backend work required to deliver some business value.
+Ensures that business value has been delivered at the end of every feature/story. This is as opposed to "horizontal slicing" i.e. creating two different user stories for the frontend and backend work required to deliver some business value.
 
 ### Simple Design
 
