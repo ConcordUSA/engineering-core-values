@@ -55,7 +55,7 @@ Should we discuss things to look for or methods of reviewing code / giving feedb
 
 ### Results Over Ceremony
 
-Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results. 
+Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results.
 
 Examples of some "ceremony smell":
 
