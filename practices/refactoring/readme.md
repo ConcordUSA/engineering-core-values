@@ -1,6 +1,6 @@
 # Refactoring
 
-To put in simple terms refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
+Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple design, while the practice of refactoring ensures that our code bases adapt to new or changing requirements while still keeping its maintainability. To put in simple terms refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
 
 ## The What and The Why
 

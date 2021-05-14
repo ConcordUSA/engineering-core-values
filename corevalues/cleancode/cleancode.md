@@ -94,7 +94,6 @@ Another code smell relating to arguments is the idea of “flag arguments”.  T
 
 Above all, functions (and of course their containing classes) should be easy to test.  Simply put - if it’s painful to setup your unit tests for a given method under test, that is a sign that the method is doing too much and should be refactored.  This pain can include setting up mocks, test data, etc.  If our classes and methods are small and “do one thing” our unit tests should not require a large amount of setup.
 
-
 **Example:**
 
 Consider the methods included in the following class
@@ -145,7 +144,9 @@ public class MortgageReport {
   public void printMortgage() {}
 }
 ```
+
 This process:
+
 - increases reusability
 - increases testability
 - increases readability
