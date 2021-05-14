@@ -79,7 +79,7 @@ Upon completion of the horizontal slice, we will have an API layer that can inte
 
 ### Wrap Up
 
-In short, vertical slicing delivers functionality faster and creates more consistent code since the developers only focuses on a small piece and work with all layers related to that peice. While this example highlights a single story that delivers functionality it is still possible to have multiple stories that roll up to a single piece of functionality when doing vertical slicing. But the responsibility for delivering that functionality would still fall to one person or pair in a vertical slice as opposed to the horizontal approach.
+In short, vertical slicing delivers functionality faster and creates more consistent code since the developers only focuses on a small piece and work with all layers related to that piece. While this example highlights a single story that delivers functionality it is still possible to have multiple stories that roll up to a single piece of functionality when doing vertical slicing. But the responsibility for delivering that functionality would still fall to one person or pair in a vertical slice as opposed to the horizontal approach.
 
 ## Resources
 

@@ -6,9 +6,10 @@
 ## The What and the Why
 
 Proper CI/CD automates the manual stuff and ensures that code is merged and released correctly.
+
 - 🏎 Team velocity
 - 💻 Code accuracy
-- 🤓 Developer happiness 
+- 🤓 Developer happiness
 
 ## CI
 
