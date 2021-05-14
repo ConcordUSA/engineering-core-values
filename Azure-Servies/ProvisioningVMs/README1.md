@@ -1,7 +1,6 @@
+# Virtual Machine Components
 
-## Virtual Machine Components
-
-Virtual machine have three fundamnental elements 
+Virtual machine have three fundamnental elements
 
 1. Image: This could be an opertaing system like Linux or Windows or an application infrastructure image like Citrix Net scaler or a cisco.
 
@@ -13,7 +12,7 @@ Virtual machine have three fundamnental elements
 
 IF you don't have Azure account go head and create an account for yourself by using the following resource
 
-https://azure.microsoft.com/en-us/account/
+<https://azure.microsoft.com/en-us/account/>
 
 User account should have ability to create resources in Azure Portal such as:
 . Resource Groups
@@ -21,13 +20,13 @@ User account should have ability to create resources in Azure Portal such as:
 . Storage Accounts
 . Networking Elements (Vnets, subnets)
 
-## Before creating a virtual machine 
+## Before creating a virtual machine
 
 After login to the Azure Portal, the steps you want to take prior to creating your virtual machine.
 
 1. Resource Group - Before creating a Virtual Machine, you'll want to create a Resource Group for the solution that your'e working in.
 
-2. Create a Virtual Network - Then you'll want to define a virtual network for your virtual machines and on that vnet you'll want to define a subnet to deploy the virtual machine. If you don't specify Vnet and Subnet Azure will create them for you by default, it will generate the IP schema for your vnet and subnet automatically. When provisioning this configuration ahead of time you get to decide on which IP space you'll have for your solution. 
+2. Create a Virtual Network - Then you'll want to define a virtual network for your virtual machines and on that vnet you'll want to define a subnet to deploy the virtual machine. If you don't specify Vnet and Subnet Azure will create them for you by default, it will generate the IP schema for your vnet and subnet automatically. When provisioning this configuration ahead of time you get to decide on which IP space you'll have for your solution.
 
 3. Use managed storage.
 
@@ -57,8 +56,8 @@ Before deploying virtual machine we have final configurations that we can make w
 
 2. Storage type - We can define storage type here we will select managed disks.
 
-3. Networking - We also can define our networking, here where we will assign the virtual machine to the define Vnet and Subnet that we created in the first phase of this process. 
+3. Networking - We also can define our networking, here where we will assign the virtual machine to the define Vnet and Subnet that we created in the first phase of this process.
 
 4. Public IP - Also we have the option to create additional vnets and subnets, if needed we can assign a public IP at this point.
 
-5. Network Security Groups (NSG)- This is essentially a basic firewall configuration, allowing access to the server on specified TCP ports for network services. 
+5. Network Security Groups (NSG)- This is essentially a basic firewall configuration, allowing access to the server on specified TCP ports for network services.
