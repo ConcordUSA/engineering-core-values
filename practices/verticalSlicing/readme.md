@@ -26,7 +26,7 @@ Vertical slicing has a number of benefits:
 
 ## Examples
 
-# Feature:
+### Feature
 
 The story:
 As a user and plant lover I would like to be able to monitor all of my 200 plant's soil moisture so that I can use the least amount of water possible and keep all my plants alive.
@@ -37,7 +37,7 @@ The layers of the developement cake:
 - A api layer that interacts with the moisture sensors and the database
 - A database that holds the information on all plants.
 
-# Vertical Slices:
+### Vertical Slices
 
 User story #1 (similar for each plant):
 As a user and plant lover I would like to see the moisture level of my single basil plant so that I can water it appropriately.
@@ -51,7 +51,7 @@ The components:
 
 Upon completion of the vertical slice, we will have the ability to monitor the basil plant and the user can water their basil plant when needed. This provides the user with the necessary functionality to take care of one plant while keeping the work load for this story managable.
 
-# Horizontal Slices:
+### Horizontal Slices
 
 User story #1:
 As a user, I would like to see all of my plants soil moisture levels on a plant hub webpage.
