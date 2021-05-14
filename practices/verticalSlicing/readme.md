@@ -77,7 +77,9 @@ The components:
 
 Upon completion of the horizontal slice, we will have an API layer that can interface with the database and UI but assumptions may have been made that conflict with UI implementation.
 
-In short, vertical slicing delivers functionality faster and creates more consistent code since the developers only focuses on a small piece and works with all layers related to that peice.
+### Wrap Up
+
+In short, vertical slicing delivers functionality faster and creates more consistent code since the developers only focuses on a small piece and work with all layers related to that peice. While this example highlights a single story that delivers functionality it is still possible to have multiple stories that roll up to a single piece of functionality when doing vertical slicing. But the responsibility for delivering that functionality would still fall to one person or pair in a vertical slice as opposed to the horizontal approach.
 
 ## Resources
 
