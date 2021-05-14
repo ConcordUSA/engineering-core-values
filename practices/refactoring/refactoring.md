@@ -1,18 +1,10 @@
 # Refactoring
 
-Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple design, while the practice of refactoring ensures that our code bases adapt to new or changing requirements while still keeping its maintainability.
+To put in simple terms refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
 
 ## The What and The Why
 
-### The What
-
-To put in simple terms refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
-
-### The Why
-
-Create clean code.
-
-#### Clean Code
+###  But what is "clean code" anyway?
 
 1. Clean code is obvious for other programmers.
 And I’m not talking about super sophisticated algorithms. Poor variable naming, bloated classes and methods, magic numbers -you name it- all of that makes code sloppy and difficult to grasp.
@@ -28,9 +20,9 @@ You know your code is dirty when only 95% of your tests passed. You know you’r
 
 5. Clean code is easier and cheaper to maintain!
 
-#### Technical Debt and Causes
+### Technical debt and causes
 
-Technical debt reflects the implied cost of reworking code caused by choosing an easy solution instead of a better more involved approach. Technical debt is one of the main reasons you would want to refactor code, with the main culprits being:
+Technical debt is one of the main reasons you would want to refactor code, with the main cultrips being:
 
 1. Business pressure
 
@@ -52,11 +44,10 @@ Technical debt reflects the implied cost of reworking code caused by choosing an
 
 ## When to do it
 
-1. The rule of Three:
-    - When you’re doing something for the first time, just get it done.
-    - When you’re doing something similar for the second time, cringe at having to repeat but do the same thing anyway.
-    - When you’re doing something for the third time, start refactoring.
-
+1. The rule of Three
+	When you’re doing something for the first time, just get it done.
+	When you’re doing something similar for the second time, cringe at having to repeat but do the same thing anyway.
+	When you’re doing something for the third time, start refactoring.
 2. When adding a feature
 Refactoring helps you understand other people’s code. If you have to deal with someone else’s dirty code, try to refactor it first. Clean code is much easier to grasp. You will improve it not only for yourself but also for those who use it after you.
 
@@ -66,19 +57,20 @@ Bugs in code behave just like those in real life: they live in the darkest, dirt
 4. During a code review
 The code review may be the last chance to tidy up the code before it becomes available to the public.
 
+
 ## How to do it
 
 Refactoring should be done as a series of small changes, each of which makes the existing code slightly better while still leaving the program in working order.
 
 1. The code should become cleaner.
-    - refer to "Clean Code"
+	refer to "Clean Code"
 2. New functionality shouldn’t be created during refactoring.
-    - Don’t mix refactoring and direct development of new features. Try to separate these processes at least within the confines of individual commits.
+	Don’t mix refactoring and direct development of new features. Try to separate these processes at least within the confines of individual commits.
 3. All existing tests must pass after refactoring.
 
-    - There are two cases when tests can break down after refactoring:
-    - You made an error during refactoring. This one is a no-brainer: go ahead and fix the error.
-    - Your tests were too low-level. For example, you were testing private methods of classes.
+	There are two cases when tests can break down after refactoring:
+	You made an error during refactoring. This one is a no-brainer: go ahead and fix the error.
+	Your tests were too low-level. For example, you were testing private methods of classes.
 
 In this case, the tests are to blame. You can either refactor the tests themselves or write an entirely new set of higher-level tests
 
