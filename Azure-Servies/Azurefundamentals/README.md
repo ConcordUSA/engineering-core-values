@@ -56,7 +56,7 @@ Manageable items that is available in Azure
 
 When we are provisiong services in Microsoft Azure, there are two fundamental services.
 
-1. IAAS (Infrastructure as a Service) - In this model compute and networking resources are managed by the user inside of Microsoft Azure Essentially, which means virtual machines that you control, In this case your'e handed off the operations of the data center, physical network and the storage to your cloud provider (Azure). 
+1. IAAS (Infrastructure as a Service) - In this model compute and networking resources are managed by the user inside of Microsoft Azure Essentially, which means virtual machines that you control, In this case your'e handed off the operations of the data center, physical network and the storage to your cloud provider (Azure).
 2. PAAS (Platform as a Service) - In this model you are consuming the resources directly without having maintain the application or the service or the operating system underneath that you are consuming the resource in its entirety as a service, this could be a database platform, development tools are even a web server platform itself. Patching and Maintenance are all handled for you by your cloud provider azure.
 
 ## Azure Compute
