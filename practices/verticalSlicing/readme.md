@@ -10,7 +10,7 @@ What is vertical slicing? Vertical slicing is a method for writing user stories 
 
 ### The Why
 
-Why vertical slicing? 
+Why vertical slicing?
 
 Vertical slicing has a number of benefits:
 
@@ -20,44 +20,64 @@ Vertical slicing has a number of benefits:
 
 3. Improve the accuracy of time estimates
 
-4. Minimize merge conflicts among developers 
+4. Minimize merge conflicts among developers
 
 5. Minimize possible bugs and errors
 
 ## Examples
 
-# Large User Story:
+# Feature:
 
-The story: 
+The story:
 As a user and plant lover I would like to be able to monitor all of my 200 plant's soil moisture so that I can use the least amount of water possible and keep all my plants alive.
 
 The layers of the developement cake:
+
 - A user interface that shows all the plants current soil moisture
 - A api layer that interacts with the moisture sensors and the database
 - A database that holds the information on all plants.
 
-# Vertical Slice:
+# Vertical Slices:
 
-The story:
+User story #1 (similar for each plant):
 As a user and plant lover I would like to see the moisture level of my single basil plant so that I can water it appropriately.
 
 The components:
-- Display the soil moisture of the basil plant on a webpage
-- Expose a POST endpoint to save the basil's soil moisture to the database
+
+- Create a simple webpage to display information on the basil plant
 - Expose a GET endpoint to get the current soil moisture of the basil plant
-- Save a record of the basil plant to the database
+- Create a plant class for basil that includes necessary plant information
+- Create a plant service that recieves information from a soil moisture sensor
 
 Upon completion of the vertical slice, we will have the ability to monitor the basil plant and the user can water their basil plant when needed. This provides the user with the necessary functionality to take care of one plant while keeping the work load for this story managable.
 
-# Horizontal Slice:
+# Horizontal Slices:
 
-The story:
-As a user, I would like to see all of my plants soil moisture levels on a single webpage.
+User story #1:
+As a user, I would like to see all of my plants soil moisture levels on a plant hub webpage.
 
 The components:
-- Create a user interface that displays all plant's soil moisture level on a single webpage
 
-Upon completion of the horizontal slice, we will have a built out UI but no API layer or database to support it.
+- Create a plant hub page
+- Display plant information on small cards
+- Display 10 plants each page
+- Capture GET Requests from an API layer
+
+Upon completion of the horizontal slice, we will have a built out UI but no API layer to get information on the plants and no information on how the API will send the data to the UI or its format since it has not been built.
+
+User story #2:
+As a user, I would like my webpage to pull information from my plants records so I can see the most up to date information on my plants.
+
+The components:
+
+- Build out a complete API layer that will interface with the UI and database
+- Create Plant Group classes that includes all necessary plant information for that plant type
+- Create a Plant service that will get information from all the soil moisture sensors
+- Expose POST, GET and PUT endpoints
+
+Upon completion of the horizontal slice, we will have an API layer that can interface with the database and UI but assumptions may have been made that conflict with UI implementation.
+
+In short, vertical slicing delivers functionality faster and creates more consistent code since the developers only focuses on a small piece and works with all layers related to that peice.
 
 ## Resources
 

@@ -48,7 +48,9 @@ Continuous Integration is a software development practice where members of a tea
 Humans are error prone; we are very bad at doing the same thing over and over. Machines, on the other hand, are very good at repeatable tasks! When working on a software project, we should strive to reduce any manual steps as much as possible. This will save time, reduce errors, but also add predictability to our software. "Works on my machine" is never an acceptable excuse! =)
 
 ## TODO: Thoughts to consider
+
 ### Review Processes?
+
 Should we discuss things to look for or methods of reviewing code / giving feedback?
 
 ### Results Over Ceremony
@@ -56,12 +58,13 @@ Should we discuss things to look for or methods of reviewing code / giving feedb
 Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results. 
 
 Examples of some "ceremony smell":
+
 - *Is this a story or a task?*
 - *What should go into what sprint?*
 - *Is this story 6 hours or 8?*
 
 Avoid tendencies towards:
+
 - Over-engineering decision flows (i.e. Jira workflows)
 - Automating processes that will likely change
 - Requiring tools or methods of work that are simply personal preferences
-

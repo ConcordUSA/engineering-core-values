@@ -89,6 +89,7 @@ This is where the result of the test is verified.
 
 }
 ```
+
 This structure can be seen in all the examples below.
 
 **Write assertions first.** This makes the purpose of the test clear from the beginning.
