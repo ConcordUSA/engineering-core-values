@@ -31,7 +31,7 @@ In collective code ownership, the entire team is responsible for the code. Every
 
 Pair programming is the concept of two team members working on a single story/feature. Often, this is two developers working back and forth (there are numerous patterns/strategies to use) to deliver business value. Some high value pairs could be frontend and backend specialists. Each can help drive their specialty areas as well as help train the other. Additionally, QA and Devs can pair to ensure that their features are delivered with appropriate tests in place. 
 
-### Refactoring
+### [Refactoring](practices/refactoring/readme.md)
 
 Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple design, while the practice of refactoring ensures that our code bases adapt to new or changing requirements while still keeping its maintainability.
 
@@ -39,7 +39,7 @@ Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple
 
 Test driven development enables us to build software with a simple design and enables us to ruthlessly refactor. It also enables us to ship software quickly and frequently (umm Agile anyone??) as we have a bed of tests delivered with all new functionality. This also allows you to refactor with confidence.
 
-### [Continuous Integration](practices/cicd/CICD.md)
+### [Continuous Integration](practices/cicd/readme.md)
 
 Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
 
