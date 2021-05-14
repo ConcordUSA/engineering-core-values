@@ -29,5 +29,5 @@ Why program in pairs or groups (swarm)?
 
 ## Resources
 
-1. [Helpful articel with all you need to know about Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
+1. [Helpful article with all you need to know about Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
 2. [More on Pairing and how to make it work](https://www.agilealliance.org/glossary/pairing/)
