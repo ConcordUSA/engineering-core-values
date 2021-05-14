@@ -9,7 +9,7 @@ https://app.pluralsight.com/course-player?clipId=3f69f293-063d-4c60-8c09-aab6573
 This module talks about Azure virtual network components, i.e deploy and configure a VNet.
 
 
-# Azure Wire Server
+# Azure Wire Server 
 
 The azure wire server service is the virtual IP 168.63.129.16 and this is a important virtual IP that you should be aware of because it does a lot of heavy lifting in your Azure Virtual Networks.
 
