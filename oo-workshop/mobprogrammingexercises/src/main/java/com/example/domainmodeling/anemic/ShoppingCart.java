@@ -7,6 +7,13 @@ public class ShoppingCart {
     private String id;
     private List<CartItem> items;
     private Customer customer;
+
+    public ShoppingCart(String id, List<CartItem> items, Customer customer) {
+        this.id = id;
+        this.items = items;
+        this.customer = customer;
+    }
+
     public String getId() {
         return id;
     }

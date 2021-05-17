@@ -51,7 +51,7 @@ public class ShoppingCartService {
 
         BigDecimal total = BigDecimal.ZERO;
         for (final CartItem cartItem : shoppingCart.getItems()) {
-            total.add(cartItem.getPrice());
+            total = total.add(cartItem.getPrice());
         }
 
         return total;
