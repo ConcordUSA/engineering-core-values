@@ -14,7 +14,7 @@ The goal of refactoring is to remediate technical debt and transform sloppy code
 
 #### Technical Debt and Causes
 
-Technical debt reflects the implied cost of reworking code caused by choosing an easy solution instead of a better more involved approach. Technical debt is one of the main reasons you would want to refactor code, with the main culprits being:
+Technical debt reflects the implied cost of reworking code caused by choosing a quick and easy solution instead of a better more involved approach. Technical debt is one of the main reasons you would want to refactor code, with the main culprits being:
 
 1. Business pressure
 
@@ -60,13 +60,34 @@ There are two cases when tests can break down after refactoring:
 
 ## Examples
 
-1. Composing Methods
-Much of refactoring is devoted to correctly composing methods. In most cases, excessively long methods are the root of all evil. The vagaries of code inside these methods conceal the execution logic and make the method extremely hard to understand and even harder to change.
+1. Simplifying Methods
+Much of refactoring is devoted to fixing poorly composed methods. In most cases, excessively long methods conceal the execution logic and make the method extremely hard to understand.
 
-2. Moving features between objects
+Complex method
 
-3. Simplifying Expressions
+```java
+    public ShoppingCart addItemToShoppingCart(final String shoppingCartId, final CartItem item) {
+        final ShoppingCart shoppingCart = this.repository.find(shoppingCartId);
 
-4. Simplifying Method calls
+        shoppingCart.getItems().add((item));
 
-5. Generalization
+        this.repository.save(shoppingCart);
+
+        return shoppingCart;
+    }
+```
+
+Simplified method
+
+```java
+   public void addItemToShoppingCart(final SolutionCartItem item) {
+
+        this.items.add(item);
+    }
+```
+
+For full solution see the [object oriented workshop domain modeling anemic example and solution.](oo-workshop/mobprogrammingexercises/src/main/java/com/example/domainmodeling/anemic)
+2. Generalization
+Generalizing methods and code structure makes code more readable and flexible.
+
+See [Liskov substitution folder](oo-workshop/mobprogrammingexercises/src/main/java/com/example/liskovsubstitution/mobprogramming) in the object oriented workshop problem and solution. Here we generalize the transportation object and then inherit from this to create a transportation object with engines and without instead of assuming all modes of transportation include engines.
