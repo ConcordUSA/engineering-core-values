@@ -27,9 +27,9 @@ The simplest design is often (almost always) the best solution to a given proble
 
 In collective code ownership, the entire team is responsible for the code. Everyone works together to produce a product of quality. No one individual is greater than the rest of the team members. This practice helps to reduce the need for hero work and eliminate silos of information within the team.
 
-### Pair Programming
+### [Pair Programming](practices/pairProgramming/readme.md)
 
-Pair programming is the concept of two team members working on a single story/feature. Often, this is two developers working back and forth (there are numerous patterns/strategies to use) to deliver business value. Some high value pairs could be frontend and backend specialists. Each can help drive their specialty areas as well as help train the other. Additionally, QA and Devs can pair to ensure that their features are delivered with appropriate tests in place. 
+Pair programming is the concept of two team members working on a single story/feature. Often, this is two developers working back and forth (there are numerous patterns/strategies to use) to deliver business value. Some high value pairs could be frontend and backend specialists. Each can help drive their specialty areas as well as help train the other. Additionally, QA and Devs can pair to ensure that their features are delivered with appropriate tests in place.
 
 ### Refactoring
 
@@ -39,7 +39,7 @@ Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple
 
 Test driven development enables us to build software with a simple design and enables us to ruthlessly refactor. It also enables us to ship software quickly and frequently (umm Agile anyone??) as we have a bed of tests delivered with all new functionality. This also allows you to refactor with confidence.
 
-### [Continuous Integration](practices/cicd/CICD.md)
+### [Continuous Integration](practices/cicd/readme.md)
 
 Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
 
@@ -55,7 +55,7 @@ Should we discuss things to look for or methods of reviewing code / giving feedb
 
 ### Results Over Ceremony
 
-Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results. 
+Once you understand the goal, make the simplest plan on how to get there. Don't let the process hinder results.
 
 Examples of some "ceremony smell":
 

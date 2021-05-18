@@ -21,11 +21,12 @@ There are two dimensions of the documentation space for production code:
 **Change Management** documentation will vary from customer customer site. Sometimes this documentation is genuinely useful and well considered, sometimes this documentation is less useful for the particulars of your impelementation. In either case, it is something that is typically reqiured to move your code into production. Check with your delivery manager to ensure that the level of documentation required is within the scope of Concord's engagement, but generally this documentation is a blocker to deployment and therefore required -- it is rare that you will be able to get an exemption at a large client from this procedural documentation. The best course of action is to (a) ensure the documentation is within Concord's scope, and (b) understand the intended need and target audience of the document to produce a useful artifact.
 
 Version control history (Git logs) can be an easy way to document your changes. Here's a few guidelines:
+
 - Change commits should be granular (limiting code changes to support a logical change).
 - Message should describe the granular change being committed.
 - History should make it easy for reviewers and newcomers to follow the rationalle of changes.
 
-**Runbook and Playbook information** documents the correct way to operate the system. How do you gracefully stop the system? Are there any order dependencies you need to consider when you are starting the software? Are there operational scripts for managing the system, and where are they located? Runbooks and Playbooks explain the proper operation of your system, and help ensure consistency in the operational environment. 
+**Runbook and Playbook information** documents the correct way to operate the system. How do you gracefully stop the system? Are there any order dependencies you need to consider when you are starting the software? Are there operational scripts for managing the system, and where are they located? Runbooks and Playbooks explain the proper operation of your system, and help ensure consistency in the operational environment.
 
 1. Runbooks explain the proper way to start the system, stop the system, and perform any routine maintenance such as data backups or archival
 2. Playbooks explain operational responses in exceptional circumstances. If an error occurs, where do you look for diagnostic information? If a particular known error condition occurs, how do you recover?
@@ -40,7 +41,7 @@ Serviceability addresses the needs of an Operations team (or the DevOps engineer
 2. Logging and other forensics data
 3. Monitoring and Metric information
 
-**Externalized configuration information*** is one key area that separates a hobbyist coder from a professional. Production code runs in a different environment than development efforts, and generally has different target endpoints for data and other services. Moving your code from a development environment into testing, or from testing to a staging or production environment, should not involve a code change. In fact, changing the code and rebuilding would effectively invalidate your prior acceptance test effort.
+**Externalized configuration information** is one key area that separates a hobbyist coder from a professional. Production code runs in a different environment than development efforts, and generally has different target endpoints for data and other services. Moving your code from a development environment into testing, or from testing to a staging or production environment, should not involve a code change. In fact, changing the code and rebuilding would effectively invalidate your prior acceptance test effort.
 
 With this in mind, you should design your code to allow for an external (i.e. not requiring code changes) mechanism for configuration. This is often a property file, or in some environments a 12-factor application style environment variable injection. Examples of commonly externalized information include:
 
@@ -65,7 +66,7 @@ To help balance the above considerations, here are recommended best practices:
 2. Log entry/exit points and key waypoints at an appropriate log severity level, such as TRACE or DEBUG.
 3. Avoid logging payload contents in bulk. In cases where some amount of payload logging is necessary for forensics, consider which elements are truly necessary and which elements are sensitive and should be masked or otherwise protected.
 4. Ensure that your framework, or your log statements, provide you enough information to follow the thread of execution of a particular flow even if it is interleaved with output from other threads of execution.
-5. When dealing with exceptions, ensure that you log enough information to debug and understand the problem that has occured. 
+5. When dealing with exceptions, ensure that you log enough information to debug and understand the problem that has occured.
 6. Be sure to log your exceptions at an appropriate severity level, such as ERROR (or in some cases WARN -- for example when something has failed but is being retried).
 
 **Monitoring and Metric information** is similar in nature to logging information, discussed above. Logging generally deals with the operational flow of the system and requests, and Monitoring and Metrics is useful to give you quick insights to the health and processing status of the system. Consider the information you might want to know to determine if your system is in a healthy state or requires some sort of intervention or forensics - you may want to know answers to questions such as:
@@ -89,6 +90,4 @@ Key points to emphasize on that last point, alerting, are:
 
 ## Maintainability
 
-
 ## Availability and Capacity
-
