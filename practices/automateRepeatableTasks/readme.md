@@ -30,21 +30,19 @@ Solutions:
 
 Some examples of tasks you may need to automate in development could be:
 
-1. API calls
-2. Formatting or displaying features
-3. Repeated set up for a class or method
-4. Any repeated set up for desired functionality
-5. Dependency injection
-6. State management on front end
+1. Formatting or displaying features
+2. Repeated set up for a class or method
+3. Any repeated set up for desired functionality
+4. Dependency injection
+5. State management on front end
 
 Solution:
 
-1. Create a function that takes in a payload and sends the desired API request.
-2. CSS styling sheets
-3. Use abstract methods and classes
-4. Create a function or class to avoid repeated code
-5. Programs like Spring Boot
-6. Programs like Redux or Flux
+1. CSS styling sheets
+2. Use abstract methods and classes
+3. Create a function or class to avoid repeated code
+4. Programs like Spring Boot
+5. Programs like Redux or Flux
 
 ### Deployment
 
