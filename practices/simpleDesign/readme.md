@@ -6,4 +6,10 @@ The simplest design is often (almost always) the best solution to a given proble
 
 ### The What
 
+Simple design is a design method that encourages implementing design details when you need them, not when you foresee you will need them. Another common acronym for this is ideology is YAGNI or "You Aren't Gonna Need It". Simple design requires an ongoing cycle of design and refactoring where design decisions are deferred to the last responsible moment and kept as simple as possible.
+
 ### The Why
+
+This method
+
+### Important Notes
