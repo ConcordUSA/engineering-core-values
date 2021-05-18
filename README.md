@@ -43,7 +43,7 @@ Test driven development enables us to build software with a simple design and en
 
 Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
 
-### Automate Repeatable Tasks
+### [Automate Repeatable Tasks](practices/automateRepeatableTasks/readme.md)
 
 Humans are error prone; we are very bad at doing the same thing over and over. Machines, on the other hand, are very good at repeatable tasks! When working on a software project, we should strive to reduce any manual steps as much as possible. This will save time, reduce errors, but also add predictability to our software. "Works on my machine" is never an acceptable excuse! =)
 
