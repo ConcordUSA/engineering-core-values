@@ -6,10 +6,19 @@ The simplest design is often (almost always) the best solution to a given proble
 
 ### The What
 
-Simple design is a design method that encourages implementing design details when you need them, not when you foresee you will need them. Another common acronym for this is ideology is YAGNI or "You Aren't Gonna Need It". Simple design requires an ongoing cycle of design and refactoring where design decisions are deferred to the last responsible moment and kept as simple as possible.
+Simple design refers to designing your code in a simple, clean and elegant way, but not necessarily simplistic. The following are guidelines to simple design:
+
+1. "You Aren't Gonna Need It"(YAGNI): Design details should be implemented when you need them, not when you foresee you will need them.
+2. Avoid duplication: duplicate code is hard to read, understand and and maintain.
+3. Self documenting: Readable and clean code makes the code self documenting and lessens the need to maintain documentation in the code. Descriptive naming and a clean layout are key factors in self documenting.
+4. Fail Fast: Test the limits of your design to determine where it will fail you and when improvements need to be made.
+5. Minimize the number of components: use the least number of classes and methods to achieve what you need.
 
 ### The Why
 
-This method
+Simple design increases efficiency by only implementing what is necessary, and makes code easier to maintain and change.
 
-### Important Notes
+## Resources
+
+1. [Simple Design Principles](https://www.jamesshore.com/v2/books/aoad1/simple_design)
+2. [What is Simple Design?](https://www.agilealliance.org/glossary/simple-design/)
