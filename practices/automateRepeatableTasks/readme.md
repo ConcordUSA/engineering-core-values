@@ -6,7 +6,7 @@ Humans are error prone; we are very bad at doing the same thing over and over. M
 
 ### The What
 
-Automation of repeatable task is pretty self explanatory: the process of implementing repeatable tasks automatically. However it is important to note that a repeatable task can be found in planning, development and deployment stages. And each stage may require a different way to automate these tasks.
+Automation of repeatable task is pretty self explanatory: the process of implementing repeatable tasks automatically. Repeatable task can be found in many aspects of work at Concord such as planning, development and deployment. Depending on the type of task it may require different methods for automation.
 
 ### The Why
 
@@ -35,6 +35,7 @@ Some examples of tasks you may need to automate in development could be:
 3. Any repeated set up for desired functionality
 4. Dependency injection
 5. State management on front end
+6. Managing infrastructure
 
 Solution:
 
@@ -43,6 +44,7 @@ Solution:
 3. Create a function or class to avoid repeated code
 4. Programs like Spring Boot
 5. Programs like Redux or Flux
+6. Cloud computing or programs like Docker
 
 ### Deployment
 
@@ -51,11 +53,13 @@ Some examples of tasks you may need to automate in deployment could be:
 1. Starting the database
 2. Booting the API layer and Front end
 3. Hosting services in containers
+4. Integration testing
 
 Solutions:
 
-Create a deployment pipeline! Use software like Azure DevOps to automate these tasks for deployment.
+Create a deployment pipeline! Use software like Azure DevOps to automate these tasks for deployment and automated testing.
 
 ## Resources
 
 1. [What and Why of General Task Automation](https://dzone.com/articles/task-automation-for-professionals-in-2021)
+2. [Infrastructure as code](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
