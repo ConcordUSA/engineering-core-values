@@ -18,7 +18,18 @@ Simple design refers to designing your code in a simple, clean and elegant way, 
 
 Simple design increases efficiency by only implementing what is necessary, and makes code easier to maintain and change.
 
+### Implementing Simple Design
+
+By skill level:
+
+**Beginner**: able to identify design elements which do not “pull their weight” (aren’t beneficial enough to justify their complexity) and refactor to simplify the code structure
+
+**Intermediate**: able to defer a design decision which may be required by a future requirement, and to identify the conditions under which the decision should be arbitrated
+
+**Advanced**: able to identify the right moment to introduce a far-reaching design decision, such as a plugins-based architecture in a desktop application
+
 ## Resources
 
 1. [Simple Design Principles](https://www.jamesshore.com/v2/books/aoad1/simple_design)
 2. [What is Simple Design?](https://www.agilealliance.org/glossary/simple-design/)
+3. [Is Design Dead?](https://www.martinfowler.com/articles/designDead.html)
