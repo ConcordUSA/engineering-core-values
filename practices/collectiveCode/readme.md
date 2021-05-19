@@ -6,16 +6,16 @@ In collective code ownership, the entire team is responsible for the code. Every
 
 ### The What
 
-Code ownership refers to who is allowed to modify and write certain portions of the code. Collective code ownership means the whole team has the ability and even duty to review and edit every piece of code.
+Code ownership refers to who is allowed to modify and write certain portions of the code. Collective code ownership means the whole team has the ability and even duty to understand and edit every piece of code.
 
 ### The Why
 
 Benefits of collective code ownership:
 
-1. Increases work velocity by not requiring work from a specific developer.
-2. Increases team communication
-3. Increases diffusion of technical knowledge
-4. Gives all developers a sense of responsibility to produce quality code.
+- Increases work velocity by not requiring work from a specific developer.
+- Increases team communication
+- Increases diffusion of technical knowledge
+- Gives all developers a sense of responsibility to produce quality code.
 
 ## Resources
 
