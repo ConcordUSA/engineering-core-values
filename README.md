@@ -69,7 +69,7 @@ Avoid tendencies towards:
 - Automating processes that will likely change
 - Requiring tools or methods of work that are simply personal preferences
 
-### Getting started with the OO Workshop
+### Getting Started with the OO Workshop
 
 #### Domain Modeling
 
@@ -88,7 +88,7 @@ Start by refactoring the classes in the `dependencyinversion.problem` directory 
 You will need to consider how to best align your classes with this principle before implementing anything.
 Afterwards, adjust the test classes to pass using the refactored classes.
 
-#### Interface segregation
+#### Interface Segregation
 
 Refactor the classes in the problem directory to adhere to the Interface Segregation Principle and make sure all the test cases are accounted for.
 You will want to distinguish which functionalities belong to each child class before implementing.
