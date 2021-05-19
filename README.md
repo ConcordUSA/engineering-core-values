@@ -23,7 +23,7 @@ Ensures that business value has been delivered at the end of every feature/story
 
 The simplest design is often (almost always) the best solution to a given problem. The simplest solution is the easiest to maintain, the easiest to change (assuming you have appropriate testing of course) and often provides extensibility and future reuse without adding complexity.
 
-### Collective Code Ownership
+### [Collective Code Ownership](practices/collectiveCode/readme.md)
 
 In collective code ownership, the entire team is responsible for the code. Everyone works together to produce a product of quality. No one individual is greater than the rest of the team members. This practice helps to reduce the need for hero work and eliminate silos of information within the team.
 
