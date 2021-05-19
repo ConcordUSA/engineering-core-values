@@ -21,7 +21,7 @@ Some examples of tasks you may need to automate in planning could be:
 1. Backlog, Sprint and Retro set ups
 2. Weekly stand up meetings
 
-Solutions:
+Potential Solutions:
 
 1. JIRA, Azure DevOPs
 2. Event Scheduler
@@ -37,7 +37,7 @@ Some examples of tasks you may need to automate in development could be:
 5. State management on front end
 6. Managing infrastructure
 
-Solution:
+Potential Solutions:
 
 1. CSS styling sheets
 2. Use abstract methods and classes
@@ -57,7 +57,7 @@ Some examples of tasks you may need to automate in deployment could be:
 5. Static Analysis
 6. Sarbanes-Oxley (SOX) compliance checks
 
-Solutions:
+Potential Solutions:
 
 Create a deployment pipeline! Use software like Azure DevOps to automate these tasks for deployment and testing.
 
