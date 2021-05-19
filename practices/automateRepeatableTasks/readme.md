@@ -6,7 +6,7 @@ Humans are error prone; we are very bad at doing the same thing over and over. M
 
 ### The What
 
-Automation of repeatable task is pretty self explanatory: the process of implementing repeatable tasks automatically. Repeatable task can be found in many aspects of work at Concord such as planning, development and deployment. Depending on the type of task it may require different methods for automation.
+Automation of repeatable task is simply explained as the process of performing repeatable tasks automatically. Repeatable tasks can be found in many aspects of work at Concord such as planning, development, and deployment.
 
 ### The Why
 
@@ -53,13 +53,16 @@ Some examples of tasks you may need to automate in deployment could be:
 1. Starting the database
 2. Booting the API layer and Front end
 3. Hosting services in containers
-4. Integration testing
+4. Testing
+5. Static Analysis
+6. Sarbanes-Oxley (SOX) compliance checks
 
 Solutions:
 
-Create a deployment pipeline! Use software like Azure DevOps to automate these tasks for deployment and automated testing.
+Create a deployment pipeline! Use software like Azure DevOps to automate these tasks for deployment and testing.
 
 ## Resources
 
 1. [What and Why of General Task Automation](https://dzone.com/articles/task-automation-for-professionals-in-2021)
 2. [Infrastructure as code](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
+3. [Automate all the things with Azure Pipelines](https://azure.microsoft.com/en-us/resources/videos/ignite-2018-automate-all-things-with-azure-pipelines/)
