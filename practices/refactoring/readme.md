@@ -38,10 +38,8 @@ Bugs in code behave just like those in real life: they live in the darkest, dirt
 Refactoring should be done as a series of small changes, each of which makes the existing code slightly better while still leaving the program in working order.
 
 1. Clean the code! Reference Concord's standards for "[Clean Code](/corevalues/cleancode/cleancode.md)"
-
 2. Do not add new functionality
     - Don’t mix refactoring and direct development of new features. Try to separate these processes at least within the confines of individual commits.
-
 3. Ensure all existing tests pass after refactoring
 There are two cases when tests can break down after refactoring:
     - You made an error during refactoring. This one is a no-brainer: go ahead and fix the error.
