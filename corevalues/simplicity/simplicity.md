@@ -1,6 +1,6 @@
 # Simplicity
 
-Simplicity is highly valued in software development. The simplest solution is often the best solution. It is the easiest to maintain, the easiest to change and often provides extensibility and future reuse without adding complexity. A common acronym related to simplicity is KISS or Keep It Simple Stupid, and applies to many areas of the software development life cycle.
+Simplicity is highly valued in software development. The simplest solution is often the best solution. It is the easiest to maintain, the easiest to change and often provides extensibility and future reuse without adding complexity. A common acronym related to simplicity is KISS or Keep It Simple Stupid, and applies to many areas of the software development life cycle. Simplicity is closely tied to the practices of [simple design](/practices/simpleDesign/readme.md), [refactoring](/practices/refactoring/readme.md), [automate repeatable tasks](/practices/automate/readme.md) and [TDD](/practices/tdd/readme.md).
 
 ## [Simple Design](/practices/simpleDesign/readme.md)
 
@@ -98,3 +98,7 @@ The stability and heavy use of these libraries helps offset some of the risk. To
 
 How do you sniff out complexity? Well you can use code smells!
 Code smells are indicators in the sources code of deeper issues. A great guide for sniffing out complexities in your code can be found [here](https://refactoring.guru/refactoring/smells).
+
+## [Refactoring](/practices/refactoring/readme.md)
+
+What do you do if your code is too complex? Time to refactor! See the informational page for refactoring for more detail.
