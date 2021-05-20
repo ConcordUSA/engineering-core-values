@@ -49,7 +49,7 @@ There are two cases when tests can break down after refactoring:
 
 ### Simplifying
 
-Simplifying can be done at multiple levels: entire system level, application level, class or method level or even expressions.
+Simplifying can be done at multiple levels: entire system level, application level, class or method level or even expressions. For guidelines on reducing complexity check out the core value of [Simplicity.](/corevalues/simplicity/simplicity.md)
 
 #### Simplifying methods
 
@@ -78,10 +78,10 @@ Simplified method
     }
 ```
 
-For full solution see the [object oriented workshop domain modeling anemic example and solution.](oo-workshop/mobprogrammingexercises/src/main/java/com/example/domainmodeling/anemic)
+For the full solution see the [object oriented workshop domain modeling anemic example and solution.](oo-workshop/mobprogrammingexercises/src/main/java/com/example/domainmodeling/anemic)
 
 ### Generalization
 
-Generalizing methods and code structure makes code more readable and flexible.
+Generalizing methods and code structure can make code more readable and flexible.
 
-See [Liskov substitution folder](oo-workshop/mobprogrammingexercises/src/main/java/com/example/liskovsubstitution/mobprogramming) in the object oriented workshop problem and solution. Here we generalize the transportation object and then inherit from this to create a transportation object with engines and without instead of assuming all modes of transportation include engines.
+See [Liskov substitution folder](oo-workshop/mobprogrammingexercises/src/main/java/com/example/liskovsubstitution/mobprogramming) in the object oriented workshop problem and solution. Here we generalize the transportation object and then inherit from this to create a transportation object with engines and without, instead of assuming all modes of transportation include engines.
