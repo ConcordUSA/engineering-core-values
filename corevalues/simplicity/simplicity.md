@@ -27,6 +27,8 @@ Coupling complicates code and entangles functionality making code harder to unde
 
 ### Examples
 
+All examples shown here can be found in the Object-Oriented workshop presentation.
+
 #### Removing Coupling
 
 - aClaim.lines().sorted("ENCOUNTER_DATE").getFirst().getField("ENCOUNTER_DATE")​
