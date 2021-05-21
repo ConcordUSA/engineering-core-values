@@ -9,7 +9,7 @@ The core values are:
 3. Repeatability
 4. Simplicity
 5. [Operational Excellence](/corevalues/operationallyready/operationally-ready.md)
-6. Security
+6. [Security](/corevalues/security/security.md)
 
 ## Practices
 
