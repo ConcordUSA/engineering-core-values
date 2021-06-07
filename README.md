@@ -31,7 +31,7 @@ In collective code ownership, the entire team is responsible for the code. Every
 
 Pair programming is the concept of two team members working on a single story/feature. Often, this is two developers working back and forth (there are numerous patterns/strategies to use) to deliver business value. Some high value pairs could be frontend and backend specialists. Each can help drive their specialty areas as well as help train the other. Additionally, QA and Devs can pair to ensure that their features are delivered with appropriate tests in place.
 
-### Refactoring
+### [Refactoring](practices/refactoring/readme.md)
 
 Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple design, while the practice of refactoring ensures that our code bases adapt to new or changing requirements while still keeping its maintainability.
 
