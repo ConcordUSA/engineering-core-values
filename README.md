@@ -6,10 +6,10 @@ The core values are:
 
 1. [Clean Code](/corevalues/cleancode/cleancode.md)
 2. [Fast Feedback](/corevalues/fastfeedback/fastfeedback.md)
-3. Repeatability
+3. [Repeatability](/corevalues/repeatability/repeatability.md)
 4. [Simplicity](/corevalues/simplicity/simplicity.md)
 5. [Operational Excellence](/corevalues/operationallyready/operationally-ready.md)
-6. Security
+6. [Security](/corevalues/security/security.md)
 
 ## Practices
 
@@ -31,7 +31,7 @@ In collective code ownership, the entire team is responsible for the code. Every
 
 Pair programming is the concept of two team members working on a single story/feature. Often, this is two developers working back and forth (there are numerous patterns/strategies to use) to deliver business value. Some high value pairs could be frontend and backend specialists. Each can help drive their specialty areas as well as help train the other. Additionally, QA and Devs can pair to ensure that their features are delivered with appropriate tests in place.
 
-### Refactoring
+### [Refactoring](practices/refactoring/readme.md)
 
 Refactoring is very tightly coupled to Simple Design and TDD. TDD enables simple design, while the practice of refactoring ensures that our code bases adapt to new or changing requirements while still keeping its maintainability.
 
@@ -43,7 +43,7 @@ Test driven development enables us to build software with a simple design and en
 
 Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
 
-### Automate Repeatable Tasks
+### [Automate Repeatable Tasks](practices/automateRepeatableTasks/readme.md)
 
 Humans are error prone; we are very bad at doing the same thing over and over. Machines, on the other hand, are very good at repeatable tasks! When working on a software project, we should strive to reduce any manual steps as much as possible. This will save time, reduce errors, but also add predictability to our software. "Works on my machine" is never an acceptable excuse! =)
 
