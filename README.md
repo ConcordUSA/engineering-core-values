@@ -7,7 +7,7 @@ The core values are:
 1. [Clean Code](/corevalues/cleancode/cleancode.md)
 2. [Fast Feedback](/corevalues/fastfeedback/fastfeedback.md)
 3. [Repeatability](/corevalues/repeatability/repeatability.md)
-4. Simplicity
+4. [Simplicity](/corevalues/simplicity/simplicity.md)
 5. [Operational Excellence](/corevalues/operationallyready/operationally-ready.md)
 6. [Security](/corevalues/security/security.md)
 
