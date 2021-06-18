@@ -1,8 +1,5 @@
 plugins {
     id 'java'
-//    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-//    id 'org.springframework.boot' version '2.2.6.RELEASE'
-
 }
 
 group 'org.example'
@@ -13,13 +10,12 @@ repositories {
 }
 
 dependencies {
-    testCompile("junit:junit:4.12")
-    testRuntime("org.junit.vintage:junit-vintage-engine:5.2.0")
+    testImplementation("junit:junit:4.12")
+    testImplementation("org.junit.vintage:junit-vintage-engine:5.2.0")
     testImplementation("org.assertj:assertj-core:3.18.1")
 
     // https://mvnrepository.com/artifact/org.mockito/mockito-all
-    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
-
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
 }
 
 test {
