@@ -27,8 +27,8 @@ public class TransportationObjectTest {
         Bus bus = new Bus();
 
         //when
-        String whencar = car.startEngine(true);
-        String whenbus = bus.startEngine(true);
+        String whencar = car.startEngine(false);
+        String whenbus = bus.startEngine(false);
 
         //then
         assertTrue(whencar.contains("Charge battery"));

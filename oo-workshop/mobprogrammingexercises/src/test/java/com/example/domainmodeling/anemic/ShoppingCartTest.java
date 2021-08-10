@@ -22,14 +22,14 @@ public class ShoppingCartTest {
         testItems = new ArrayList<>();
     }
 
-    @Test(expected = InvalidCustomerException.class)
-    public void givenAShoppingCartIsToBeCreated_whenACustomerDoesNotExist_ThrowsInvalidCustomerException() throws InvalidCustomerException {
-//        //arrange
-//        tested = new ShoppingCart(UUID.randomUUID().toString(), testItems, null);
-//
-//        //act
-//        tested.IsShoppingCartValid();
-    }
+//    @Test(expected = InvalidCustomerException.class)
+//    public void givenAShoppingCartIsToBeCreated_whenACustomerDoesNotExist_ThrowsInvalidCustomerException() throws InvalidCustomerException {
+////        //arrange
+////        tested = new ShoppingCart(UUID.randomUUID().toString(), testItems, null);
+////
+////        //act
+////        tested.IsShoppingCartValid();
+//    }
 
     @Test
     public void givenAValidShoppingCartIsToBeCreated_whenShoppingCartContainsOneItem_thenShoppingCartTotalEqualsItemTotal(){
