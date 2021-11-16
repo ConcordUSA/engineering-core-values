@@ -52,3 +52,11 @@ A green container means our SQL DB image is running, and we are ready to connect
 ![](dockerdesktop1.png)
 
 ## Now we are ready to connect.
+
+More information on containerized DB images:
+
+Link to docker hub page for MSSQL image:
+https://hub.docker.com/_/microsoft-mssql-server
+
+Link to docker hub page for Azure SQL Edge image:
+https://hub.docker.com/_/microsoft-azure-sql-edge
