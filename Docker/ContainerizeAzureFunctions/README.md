@@ -1,6 +1,6 @@
 # Dockerize Azure Functions
 
-This document is used to collect information on Dockerize Azure functions and create the ability to run Azure function locally by decopuling cloud based dependencies.
+This document is used to collect information on dockerizing Azure functions and create the ability to run Azure function locally by decopuling cloud based dependencies.
 
 ## Introduction
 
@@ -19,7 +19,7 @@ There are many ways to create an initial docker file. You can create a local fun
 func init <ProjectName> --dotnet --docker
 ```
 
-If you want to try out different worker runbtimes you can also run 
+If you want to try out different worker runtimes you can also run 
 ```sh
 func init --docker
 ```
@@ -75,7 +75,7 @@ services:
             - AzureWebJobsStorage
 
         depends_on:
-            - sites.docker.emulator
+            - storage.docker.emulator
 ```
 NOTE: The latest azurite image is not compatible hence we are using 3.14.0
 
