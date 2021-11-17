@@ -1,5 +1,9 @@
 # Setting up a containerized SQL DB Image using docker-compose:
 
+### Required: 
+- [Docker Desktop](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
 We can quickly create and run a SQL container image using a docker-compose.yml file. Below is a template of such a file:
 
 ## docker-compose.yml template:

@@ -6,9 +6,14 @@ Link to the Docker Hub page about the Azure SQL Edge container image:
 
 https://hub.docker.com/_/microsoft-azure-sql-edge
 
+### Required: 
+- [Docker Desktop](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- Azure Data Studio (or another DB manager)
+
 ## Getting started:
 
-### Run the following script in a terminal window:
+Run the following script in a terminal window:
 ```
 docker run --name example_sql -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=StrongPassword$' -p 1433:1433 -d mcr.microsoft.com/azure-sql-edge:latest
 ```
@@ -58,7 +63,4 @@ CREATE DATABASE TestDb
 GO
 ```
 
-- There should be a new "TestDb" database under databases for your connection.
-
-
-
+There should be a new "TestDb" database under databases for your connection.
