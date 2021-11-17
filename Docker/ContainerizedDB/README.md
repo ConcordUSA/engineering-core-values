@@ -49,6 +49,11 @@ Now when we run "docker-compose ps" again, it should reveal the status of the co
 
 (note that I am using the azure-sql-edge image becuase I am operating on an M1 Mac)
 
+We can also stop and remove the container by running the following command:
+```
+docker-compose down
+```
+
 ### Confirm that the container is running in Docker Desktop:
 
 A green container means our SQL DB image is running, and we are ready to connect to it. There is also a handy button that allows you to open the docker-compose file in VS Code:
