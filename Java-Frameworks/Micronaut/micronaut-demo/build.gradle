@@ -1,0 +1,46 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("io.micronaut.application") version "3.6.2"
+}
+
+version = "0.1"
+group = "com.concordusa"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor("org.projectlombok:projectlombok")
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    implementation("org.projectlombok:lombok")
+    implementation("io.micronaut.data:micronaut-data-hibernate-reactive")
+    implementation("io.micronaut.reactor:micronaut-reactor")
+    implementation("io.micronaut.reactor:micronaut-reactor-http-client")
+    implementation("io.micronaut.sql:micronaut-vertx-pg-client")
+    implementation("org.postgresql:postgresql")
+    implementation("com.ongres.scram:client:2.1")
+    implementation('org.flywaydb:flyway-core:9.7.0')
+}
+
+
+application {
+    mainClass.set("com.concordusa.Application")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
+}
+
+graalvmNative.toolchainDetection = false
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.concordusa.*")
+    }
+}
+
+
+

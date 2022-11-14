@@ -1,0 +1,1 @@
+This repository demonstrates popular JAVA frameworks by building a CRUD API. In building out the API, we are going to use and demo best practices while building out the API like database migrations, containerization, testing strategy, etc. 

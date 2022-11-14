@@ -1,0 +1,9 @@
+version: "3"
+services:
+  db:
+    image: "postgres:alpine"
+    environment:
+      - POSTGRES_USER=concord
+      - POSTGRES_PASSWORD=Concord123456!
+    ports:
+      - "5432:5432"
