@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor("org.projectlombok:projectlombok")
+    annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
     implementation("org.projectlombok:lombok")
     implementation("io.micronaut.data:micronaut-data-hibernate-reactive")

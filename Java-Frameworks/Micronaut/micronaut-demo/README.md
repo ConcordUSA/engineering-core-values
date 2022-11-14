@@ -13,11 +13,7 @@ We will be creating a CRUD application using the following:
 - [Docker](https://docker.com) for orchestrating integrated environment
 - JDK 17
 
-**If you are using Jetbrains IntelliJ as IDE, make sure enable annotation processing as described
-below in the screenshot**<br>
-
-![Enable Annotation Processing in IntelliJ IDE](/src/main/resources/Enable_Annotation_Processing.png "Enable Annotation
-Processing")
+**If you are using Jetbrains IntelliJ as IDE, make sure enable annotation processing.**<br>
 
 ## Dependencies
 Let's start by investigating the contents of `build.gradle` file. 
@@ -279,5 +275,65 @@ database migrations. Notice how we are using `@Properties` annotation that allow
 We want `Flyway` to run the migrations on application startup. To achieve that, we are annotating the method we want to
 execute at startup with `@EventListener` and pass in the `StartupEvent` as the method parameter. We are also annotating
 the method with `Async`. This helps in the execution of the method on a separate thread in case the application startup 
-is taking a lot of time. 
+is taking a lot of time. <br>
 
+Create a file `V1__create_user_table.sql` within the `db_migration` directory with the following
+contents: <br>
+```sql
+create sequence "app_user_seq" start with 1;
+create table app_user
+(
+    id         bigserial primary key not null,
+    first_name varchar(255)          not null,
+    last_name  varchar(255),
+    email      varchar(255)
+);
+```
+On application startup, `Flyway` will execute the above `sql` file for database migrations. 
+
+## Testing
+We should have a working application at this point. To run the application, ensure that the db container is up and from
+the project root, execute the following command: <br>
+`./gradlew run` <br>
+Use any `http` client like `Postman`, `curl` to make the following `POST` request: <br>
+```http request
+POST http://localhost:8080/users
+content-type: application/json
+
+{
+  "firstName": "Nikola",
+  "lastName": "Tesla",
+  "email": "nikola@tesla.dev"
+}
+```
+You should see the following response from the above request: <br>
+```
+http://localhost:8080/users
+
+HTTP/1.1 204 No Content
+Location: /users/1
+date: Mon, 14 Nov 2022 17:00:37 GMT
+connection: keep-alive
+<Response body is empty>
+```
+
+Make another `HTTP GET` request to the above `location`: <br>
+```http request
+GET http://localhost:8080/users/1
+```
+
+You should get the following response back: <br>
+```
+HTTP/1.1 200 OK
+date: Mon, 14 Nov 2022 17:00:40 GMT
+Content-Type: application/json
+content-length: 79
+connection: keep-alive
+
+{
+  "id": 1,
+  "firstName": "Nikola",
+  "lastName": "Tesla",
+  "email": "nikola@tesla.dev"
+}
+```
