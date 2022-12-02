@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: micronautDemo
+netty:
+  default:
+    allocator:
+      max-order: 3
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/postgres`}
+    username: ${JDBC_USER:concord}
+    password: ${JDBC_PASSWORD:Concord123456!}
+jpa:
+  default:
+    reactive: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        connection:
+          url: ${datasources.default.url}
+          username: ${datasources.default.username}
+          password: ${datasources.default.password}
